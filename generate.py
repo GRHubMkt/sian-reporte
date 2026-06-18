@@ -19,7 +19,7 @@ if not DSN:
 META_SPEND_MXN = 6954.91          # respaldo (se usa solo si no hay token de Meta)
 META_SPEND_DATE = "17/06/2026"
 META_CAMPAIGN_ID = "120246259039590082"  # Campana MSG en Meta Ads
-META_API_VERSION = "v21.0"
+META_API_VERSION = "v25.0"
 
 
 def fetch_meta_spend():

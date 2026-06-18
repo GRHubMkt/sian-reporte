@@ -87,6 +87,33 @@ select coalesce(source,'(sin fuente)') fuente,
 from x,p group by 1 order by total desc
 """
 
+Q_SANKEY = f"""
+with x as (
+  select source,
+    coalesce(ai_handled,false) ai,
+    case when disposition is null then 'activo' when disposition='duplicate' then 'dup' else 'aband' end bucket,
+    (disposition is null) activo,
+    coalesce(outbound_call_count,0) oc,
+    was_handed_off
+  from public.lead_report where {NOTTEST}
+)
+select coalesce(source,'(sin fuente)') fuente, count(*) total,
+ count(*) filter (where ai) ai, count(*) filter (where not ai) sin_ai,
+ count(*) filter (where ai and bucket='activo') ai_activo,
+ count(*) filter (where ai and bucket='aband') ai_aband,
+ count(*) filter (where ai and bucket='dup') ai_dup,
+ count(*) filter (where not ai and bucket='activo') sinai_activo,
+ count(*) filter (where not ai and bucket='aband') sinai_aband,
+ count(*) filter (where not ai and bucket='dup') sinai_dup,
+ count(*) filter (where activo and oc>0) call,
+ count(*) filter (where activo and oc=0) chat,
+ count(*) filter (where activo and oc>0 and was_handed_off) call_cer,
+ count(*) filter (where activo and oc>0 and not was_handed_off) call_sin,
+ count(*) filter (where activo and oc=0 and was_handed_off) chat_cer,
+ count(*) filter (where activo and oc=0 and not was_handed_off) chat_sin
+from x group by 1 order by total desc
+"""
+
 
 def rows(cur, sql):
     cur.execute(sql)
@@ -105,6 +132,7 @@ def main():
     daily = rows(cur, Q_DAILY)
     f = rows(cur, Q_FUNNEL)[0]
     src = rows(cur, Q_SRC)
+    sk = rows(cur, Q_SANKEY)
     cur.close()
     conn.close()
 
@@ -125,6 +153,14 @@ def main():
         "fuentes": [{"fuente": r["fuente"], "mtd": i(r["mtd"]), "act": i(r["act"]),
                      "ventas": i(r["ventas"]), "total": i(r["total"])} for r in src],
         "daily": [{"lbl": r["lbl"], "leads": i(r["leads"]), "ventas": i(r["ventas"])} for r in daily],
+        "sankey": [{
+            "fuente": r["fuente"], "total": i(r["total"]), "ai": i(r["ai"]), "sin_ai": i(r["sin_ai"]),
+            "ai_activo": i(r["ai_activo"]), "ai_aband": i(r["ai_aband"]), "ai_dup": i(r["ai_dup"]),
+            "sinai_activo": i(r["sinai_activo"]), "sinai_aband": i(r["sinai_aband"]), "sinai_dup": i(r["sinai_dup"]),
+            "call": i(r["call"]), "chat": i(r["chat"]),
+            "call_cer": i(r["call_cer"]), "call_sin": i(r["call_sin"]),
+            "chat_cer": i(r["chat_cer"]), "chat_sin": i(r["chat_sin"]),
+        } for r in sk],
     }
 
     with open("data.json", "w", encoding="utf-8") as fp:

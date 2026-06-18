@@ -134,7 +134,7 @@ fetch('data.json?_='+Date.now()).then(r=>r.json()).then(D=>{
       '<div class="card"><div class="lbl">Inversión (campaña MSG)</div><div class="val">$'+fmt(M.spend)+'</div><div class="delta muted">MXN · al '+M.updated+'</div></div>'+
       '<div class="card"><div class="lbl">Leads de Meta</div><div class="val">'+fmt(M.leads)+'</div></div>'+
       '<div class="card"><div class="lbl">Costo por lead</div><div class="val">$'+N(M.cpl).toLocaleString('es-MX',{minimumFractionDigits:2,maximumFractionDigits:2})+'</div><div class="delta muted">MXN</div></div>';
-    document.getElementById('metanote').innerHTML='Atribución 1:1 con Meta (cada conversación de mensajería = un lead en el CRM). El costo por lead se recalcula a diario; la inversión se actualiza de forma manual (el robot no tiene acceso a la API de Meta). ROAS aún no calculable (0 cierres).';
+    document.getElementById('metanote').innerHTML='Atribución 1:1 con Meta (cada conversación de mensajería = un lead en el CRM). '+(M.auto?'Inversión y costo por lead se actualizan solos a diario desde la API de Meta.':'El costo por lead se recalcula a diario; la inversión se actualiza de forma manual.')+' ROAS aún no calculable (0 cierres).';
   }
 
   // Leads calientes (probabilidad de cierre Odoo)
@@ -222,7 +222,7 @@ fetch('data.json?_='+Date.now()).then(r=>r.json()).then(D=>{
   }
 
   document.getElementById('foot').innerHTML=
-    'Total leads reales (histórico, sin datos de prueba): <b>'+fmt(f.leads)+'</b>. Se excluyen registros de prueba/QA. "Abandonaron" = no contestó / sin interés / spam. Zona horaria America/Cancún (−05). Inversión y conversaciones de Meta Ads se reportan por separado. Actualización automática diaria 10:00 Cancún.';
+    'Total leads reales (histórico, sin datos de prueba): <b>'+fmt(f.leads)+'</b>. Se excluyen registros de prueba/QA. "Abandonaron" = no contestó / sin interés / spam. Zona horaria America/Cancún (−05). Actualización automática diaria 10:00 Cancún.';
 }).catch(e=>{
   const el=document.getElementById('err');el.style.display='block';
   el.textContent='No se pudo cargar data.json: '+e;

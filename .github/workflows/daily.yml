@@ -27,6 +27,7 @@ jobs:
       - name: Generar data.json
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
         run: python generate.py
 
       - name: Commit y push si hay cambios

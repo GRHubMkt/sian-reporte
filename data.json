@@ -1,40 +1,40 @@
 {
-  "generado_en": "17/06/2026 21:43 (Cancún)",
-  "today_lbl": "17/06/2026",
+  "generado_en": "18/06/2026 12:55 (Cancún)",
+  "today_lbl": "18/06/2026",
   "mes_act": "06/2026",
   "mes_ant": "05/2026",
   "hoy": {
-    "leads": 30,
-    "activos": 29,
-    "ventas": 6,
-    "llamadas": 7,
-    "chats": 35,
-    "abandono": 1
+    "leads": 24,
+    "activos": 24,
+    "ventas": 0,
+    "llamadas": 0,
+    "chats": 24,
+    "abandono": 0
   },
   "ayer": {
-    "leads": 21,
-    "activos": 14,
-    "ventas": 5,
-    "llamadas": 20,
-    "chats": 36,
-    "abandono": 7
+    "leads": 37,
+    "activos": 36,
+    "ventas": 6,
+    "llamadas": 8,
+    "chats": 43,
+    "abandono": 1
   },
   "mtd": {
-    "leads": 382,
+    "leads": 413,
     "ventas": 87,
-    "llamadas": 255,
-    "chats": 551
+    "llamadas": 350,
+    "chats": 616
   },
   "pm_full": {
     "leads": 129,
     "ventas": 28,
-    "llamadas": 198,
-    "chats": 256
+    "llamadas": 212,
+    "chats": 258
   },
-  "pm_mtd_leads": 0,
+  "pm_mtd_leads": 1,
   "funnel": {
-    "leads": 511,
-    "activos": 293,
+    "leads": 542,
+    "activos": 324,
     "abandono": 170,
     "duplicado": 48,
     "ventas": 115,
@@ -43,10 +43,10 @@
   "fuentes": [
     {
       "fuente": "meta_ad",
-      "mtd": 376,
-      "act": 228,
+      "mtd": 407,
+      "act": 259,
       "ventas": 84,
-      "total": 499
+      "total": 530
     },
     {
       "fuente": "organic",
@@ -141,28 +141,33 @@
     },
     {
       "lbl": "17/06",
-      "leads": 30,
+      "leads": 37,
       "ventas": 6
+    },
+    {
+      "lbl": "18/06",
+      "leads": 24,
+      "ventas": 0
     }
   ],
   "sankey": [
     {
       "fuente": "meta_ad",
-      "total": 499,
-      "ai": 499,
+      "total": 530,
+      "ai": 530,
       "sin_ai": 0,
-      "ai_activo": 286,
+      "ai_activo": 317,
       "ai_aband": 166,
       "ai_dup": 47,
       "sinai_activo": 0,
       "sinai_aband": 0,
       "sinai_dup": 0,
-      "call": 152,
-      "chat": 134,
-      "call_cer": 62,
-      "call_sin": 90,
-      "chat_cer": 21,
-      "chat_sin": 113
+      "call": 170,
+      "chat": 147,
+      "call_cer": 65,
+      "call_sin": 105,
+      "chat_cer": 18,
+      "chat_sin": 129
     },
     {
       "fuente": "organic",
@@ -175,12 +180,12 @@
       "sinai_activo": 0,
       "sinai_aband": 0,
       "sinai_dup": 0,
-      "call": 4,
-      "chat": 2,
+      "call": 5,
+      "chat": 1,
       "call_cer": 2,
-      "call_sin": 2,
+      "call_sin": 3,
       "chat_cer": 1,
-      "chat_sin": 1
+      "chat_sin": 0
     },
     {
       "fuente": "voice",
@@ -208,7 +213,8 @@
   "meta": {
     "spend": 6954.91,
     "updated": "17/06/2026",
-    "leads": 499,
-    "cpl": 13.94
+    "leads": 530,
+    "cpl": 13.12,
+    "auto": false
   }
 }

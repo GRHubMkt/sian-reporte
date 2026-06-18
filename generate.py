@@ -14,6 +14,12 @@ DSN = os.environ.get("DATABASE_URL")
 if not DSN:
     raise SystemExit("Falta la variable de entorno DATABASE_URL")
 
+# Inversion de la campana de Meta (MSG). Se actualiza periodicamente a mano,
+# ya que el Action no tiene acceso a la API de Meta. El costo por lead se
+# recalcula solo cada dia contra el conteo de leads en vivo.
+META_SPEND_MXN = 6954.91
+META_SPEND_DATE = "17/06/2026"
+
 # Filtro de datos de prueba/QA (se excluyen)
 NOTTEST = """not (
   coalesce(customer_phone,'') ~* '^(eval-|audit|test-|post|posthc)'
@@ -71,7 +77,9 @@ select count(*) leads,
  count(*) filter (where disposition in ('no_answer','not_interested','spam','other')) abandono,
  count(*) filter (where disposition='duplicate') duplicado,
  count(*) filter (where was_handed_off) ventas,
- count(*) filter (where odoo_won) ganados
+ count(*) filter (where odoo_won) ganados,
+ count(*) filter (where odoo_probability >= 50) hot50,
+ count(*) filter (where odoo_probability >= 70) hot70
 from public.lead_report where {NOTTEST}
 """
 
@@ -161,6 +169,15 @@ def main():
             "call_cer": i(r["call_cer"]), "call_sin": i(r["call_sin"]),
             "chat_cer": i(r["chat_cer"]), "chat_sin": i(r["chat_sin"]),
         } for r in sk],
+        "hot": {"p50": i(f["hot50"]), "p70": i(f["hot70"])},
+    }
+
+    meta_leads = next((i(r["total"]) for r in sk if r["fuente"] == "meta_ad"), 0)
+    data["meta"] = {
+        "spend": round(META_SPEND_MXN, 2),
+        "updated": META_SPEND_DATE,
+        "leads": meta_leads,
+        "cpl": round(META_SPEND_MXN / meta_leads, 2) if meta_leads else 0,
     }
 
     with open("data.json", "w", encoding="utf-8") as fp:

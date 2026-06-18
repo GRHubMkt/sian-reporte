@@ -14,11 +14,34 @@ DSN = os.environ.get("DATABASE_URL")
 if not DSN:
     raise SystemExit("Falta la variable de entorno DATABASE_URL")
 
-# Inversion de la campana de Meta (MSG). Se actualiza periodicamente a mano,
-# ya que el Action no tiene acceso a la API de Meta. El costo por lead se
-# recalcula solo cada dia contra el conteo de leads en vivo.
-META_SPEND_MXN = 6954.91
+# Inversion de la campana de Meta (MSG). Si existe el secret META_ACCESS_TOKEN,
+# se obtiene en vivo desde la Graph API; si no, se usa este valor de respaldo.
+META_SPEND_MXN = 6954.91          # respaldo (se usa solo si no hay token de Meta)
 META_SPEND_DATE = "17/06/2026"
+META_CAMPAIGN_ID = "120246259039590082"  # Campana MSG en Meta Ads
+META_API_VERSION = "v21.0"
+
+
+def fetch_meta_spend():
+    """Gasto lifetime de la campana MSG desde la Graph API de Meta.
+    Devuelve (spend_float, True) si lo logra; (None, False) si no hay token o falla."""
+    token = os.environ.get("META_ACCESS_TOKEN")
+    if not token:
+        return None, False
+    try:
+        import urllib.request
+        import urllib.parse
+        qs = urllib.parse.urlencode({"fields": "spend", "date_preset": "maximum", "access_token": token})
+        url = f"https://graph.facebook.com/{META_API_VERSION}/{META_CAMPAIGN_ID}/insights?{qs}"
+        with urllib.request.urlopen(url, timeout=30) as resp:
+            payload = json.loads(resp.read().decode("utf-8"))
+        data_rows = payload.get("data", [])
+        if data_rows and data_rows[0].get("spend") is not None:
+            return round(float(data_rows[0]["spend"]), 2), True
+        print("Aviso: respuesta de Meta sin 'spend':", payload)
+    except Exception as e:
+        print("Aviso: no se pudo obtener el gasto de Meta:", e)
+    return None, False
 
 # Filtro de datos de prueba/QA (se excluyen)
 NOTTEST = """not (
@@ -173,11 +196,15 @@ def main():
     }
 
     meta_leads = next((i(r["total"]) for r in sk if r["fuente"] == "meta_ad"), 0)
+    live_spend, auto = fetch_meta_spend()
+    spend = live_spend if live_spend is not None else round(META_SPEND_MXN, 2)
+    updated = now.strftime("%d/%m/%Y") if auto else META_SPEND_DATE
     data["meta"] = {
-        "spend": round(META_SPEND_MXN, 2),
-        "updated": META_SPEND_DATE,
+        "spend": spend,
+        "updated": updated,
         "leads": meta_leads,
-        "cpl": round(META_SPEND_MXN / meta_leads, 2) if meta_leads else 0,
+        "cpl": round(spend / meta_leads, 2) if meta_leads else 0,
+        "auto": auto,
     }
 
     with open("data.json", "w", encoding="utf-8") as fp:

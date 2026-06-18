@@ -36,7 +36,8 @@ canvas{max-width:100%}
 </style>
 </head>
 <body>
-<h1>SIAN · Reporte diario de leads</h1>
+<img src="https://cdn.prod.website-files.com/66195148790c4d26550e285f/67a230ef26bc9ad1e049a06c_logoSian-Brown.png" alt="SIAN" style="height:44px;display:block;margin:0 0 14px" onerror="this.style.display='none'">
+<h1>Reporte diario de leads</h1>
 <div class="sub">Datos del CRM · datos de prueba excluidos <span class="chip" id="ts">cargando…</span></div>
 
 <div id="err"></div>
@@ -221,7 +222,7 @@ fetch('data.json?_='+Date.now()).then(r=>r.json()).then(D=>{
   }
 
   document.getElementById('foot').innerHTML=
-    'Total leads reales (histórico, sin datos de prueba): <b>'+fmt(f.leads)+'</b>. Se excluyen registros de prueba/QA. "Abandonaron" = no contestó / sin interés / spam. "Leads calientes" usan la probabilidad de cierre de Odoo. Zona horaria America/Cancún (−05). Actualización automática diaria 10:00 Cancún.';
+    'Total leads reales (histórico, sin datos de prueba): <b>'+fmt(f.leads)+'</b>. Se excluyen registros de prueba/QA. "Abandonaron" = no contestó / sin interés / spam. Zona horaria America/Cancún (−05). Inversión y conversaciones de Meta Ads se reportan por separado. Actualización automática diaria 10:00 Cancún.';
 }).catch(e=>{
   const el=document.getElementById('err');el.style.display='block';
   el.textContent='No se pudo cargar data.json: '+e;

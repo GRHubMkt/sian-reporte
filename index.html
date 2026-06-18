@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SIAN · Reporte diario de leads</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script>
 <style>
 :root{color-scheme:light;--bg:#fff;--surface:#f7f7f8;--border:#e6e7eb;--tx:#16181d;--mut:#6b7280;--green:#16a34a;--red:#dc2626}
 *{box-sizing:border-box}
@@ -54,6 +56,19 @@ canvas{max-width:100%}
 
 <h2>Fuentes · mes actual</h2>
 <table id="src"><thead><tr><th>Fuente</th><th>Leads (mes)</th><th>Activos</th><th>A ventas</th><th>Total histórico</th></tr></thead><tbody></tbody></table>
+
+<h2>Hallazgos clave</h2>
+<ul id="hallazgos" style="margin:6px 0 0;padding-left:18px;line-height:1.7"></ul>
+
+<h2>Embudo por fuente (Sankey)</h2>
+<div style="display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--mut);margin-bottom:6px">
+  <span style="color:#2563eb">&#9679; Fuente / llamada</span>
+  <span style="color:#16a34a">&#9679; AI / avanza / cerrador</span>
+  <span style="color:#dc2626">&#9679; Abandona</span>
+  <span style="color:#d97706">&#9679; Duplicado / sin cerrador</span>
+  <span style="color:#9ca3af">&#9679; Sin AI / solo chat</span>
+</div>
+<div id="sankeys"></div>
 
 <div class="foot" id="foot"></div>
 
@@ -114,6 +129,72 @@ fetch('data.json?_='+Date.now()).then(r=>r.json()).then(D=>{
     ]},
     options:{responsive:true,maintainAspectRatio:false,scales:{y:{beginAtZero:true,ticks:{precision:0}},x:{grid:{display:false}}},plugins:{legend:{position:'bottom',labels:{boxWidth:12,font:{size:11}}}}}
   });
+
+  // Hallazgos clave
+  const sk=D.sankey||[];
+  const sumf=k=>sk.reduce((a,r)=>a+N(r[k]),0);
+  const leads=N(f.leads), activo=N(f.activos);
+  const metaTot=N((D.fuentes.find(x=>x.fuente==='meta_ad')||{}).total||0);
+  const totTot=D.fuentes.reduce((a,r)=>a+N(r.total),0)||1;
+  const metaShare=Math.round(metaTot/totTot*100);
+  const aCall=sumf('call'), aCer=sumf('call_cer')+sumf('chat_cer');
+  const abPct=leads>0?Math.round(N(f.abandono)/leads*100):0;
+  const H=[
+    'Meta Ads es el único canal pagado y el motor del negocio: <b>'+metaShare+'%</b> de los leads. La atribución con Meta es 1:1 (cada conversación de mensajería = un lead en el CRM).',
+    'Los registros de prueba/QA se excluyen automáticamente; por eso la fuente <b>website_form</b> (que era 100% datos de prueba) no aparece.',
+    'El embudo se angosta al pasar a un humano: de <b>'+fmt(activo)+'</b> leads activos, solo <b>'+fmt(aCall)+'</b> llegan a una llamada y <b>'+fmt(aCer)+'</b> quedan asignados a un cerrador.',
+    'El <b>'+abPct+'%</b> abandona tras el agente AI, casi todo por “no contestó” — el cuello de botella es la velocidad de seguimiento, no la generación.',
+    'Aún no hay cierres registrados (<b>'+fmt(f.ganados)+'</b>): ciclo de venta largo, propio de cabañas de alto valor.'
+  ];
+  document.getElementById('hallazgos').innerHTML=H.map(t=>'<li>'+t+'</li>').join('');
+
+  // Sankey por fuente
+  const SC={info:'#2563eb',ok:'#16a34a',bad:'#dc2626',warn:'#d97706',gray:'#9ca3af',text:'#16181d'};
+  function build(d){
+    const Nn=[],idx={},push=(k,name,val,col)=>{if(val<=0)return;idx[k]=Nn.length;Nn.push({name,val,color:col});};
+    push('src',d.fuente,d.total,SC.info);
+    push('ai','Atendido AI',d.ai,SC.ok); push('sinai','Sin AI',d.sin_ai,SC.gray);
+    push('activo','Activo',N(d.ai_activo)+N(d.sinai_activo),SC.ok);
+    push('aband','Abandonó',N(d.ai_aband)+N(d.sinai_aband),SC.bad);
+    push('dup','Duplicado',N(d.ai_dup)+N(d.sinai_dup),SC.warn);
+    push('call','Llamada humana',d.call,SC.info); push('chat','Solo chat',d.chat,SC.gray);
+    push('cer','Asignado cerrador',N(d.call_cer)+N(d.chat_cer),SC.ok);
+    push('sincer','Sin cerrador',N(d.call_sin)+N(d.chat_sin),SC.warn);
+    const Lk=[],add=(a,b,v)=>{if(N(v)>0&&idx[a]!=null&&idx[b]!=null)Lk.push({source:idx[a],target:idx[b],value:N(v)});};
+    add('src','ai',d.ai); add('src','sinai',d.sin_ai);
+    add('ai','activo',d.ai_activo); add('ai','aband',d.ai_aband); add('ai','dup',d.ai_dup);
+    add('sinai','activo',d.sinai_activo); add('sinai','aband',d.sinai_aband); add('sinai','dup',d.sinai_dup);
+    add('activo','call',d.call); add('activo','chat',d.chat);
+    add('call','cer',d.call_cer); add('call','sincer',d.call_sin);
+    add('chat','cer',d.chat_cer); add('chat','sincer',d.chat_sin);
+    return {nodes:Nn,links:Lk};
+  }
+  function draw(el,g){
+    const W=700,h=el.viewBox.baseVal.height;
+    const s=d3.sankey().nodeWidth(11).nodePadding(10).nodeAlign(d3.sankeyLeft).extent([[120,6],[560,h-8]]);
+    const graph=s({nodes:g.nodes.map(o=>Object.assign({},o)),links:g.links.map(o=>Object.assign({},o))});
+    const svg=d3.select(el);
+    svg.append('g').attr('fill','none').selectAll('path').data(graph.links).join('path')
+      .attr('d',d3.sankeyLinkHorizontal()).attr('stroke',d=>d.target.color).attr('stroke-opacity',0.3).attr('stroke-width',d=>Math.max(1,d.width));
+    const node=svg.append('g').selectAll('g').data(graph.nodes).join('g');
+    node.append('rect').attr('x',d=>d.x0).attr('y',d=>d.y0).attr('width',d=>d.x1-d.x0).attr('height',d=>Math.max(2,d.y1-d.y0)).attr('rx',2).attr('fill',d=>d.color);
+    node.append('text').attr('x',d=>d.x0<W/2?d.x1+5:d.x0-5).attr('y',d=>(d.y0+d.y1)/2).attr('dy','0.32em').attr('text-anchor',d=>d.x0<W/2?'start':'end').attr('font-size','11px').attr('fill',SC.text).text(d=>d.name+'  '+d.val.toLocaleString('es-MX'));
+  }
+  if(window.d3 && d3.sankey){
+    const cont=document.getElementById('sankeys');
+    sk.filter(r=>N(r.total)>0).forEach((r,k)=>{
+      const lbl=document.createElement('div');
+      lbl.style.cssText='font-size:13px;font-weight:600;margin:'+(k?16:6)+'px 0 2px';
+      lbl.textContent=r.fuente+' · '+fmt(r.total)+' leads';
+      cont.appendChild(lbl);
+      const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');
+      svg.setAttribute('viewBox','0 0 700 200'); svg.setAttribute('width','100%'); svg.style.overflow='visible';
+      cont.appendChild(svg);
+      try{ draw(svg,build(r)); }catch(e){}
+    });
+  } else {
+    document.getElementById('sankeys').innerHTML='<div class="muted" style="font-size:13px">No se pudo cargar la librería del Sankey.</div>';
+  }
 
   document.getElementById('foot').innerHTML=
     'Total leads reales (histórico, sin datos de prueba): <b>'+fmt(f.leads)+'</b>. Se excluyen registros de prueba/QA. "Abandonaron" = no contestó / sin interés / spam. Zona horaria America/Cancún (−05). Inversión y conversaciones de Meta Ads se reportan por separado. Actualización automática diaria 10:00 Cancún.';

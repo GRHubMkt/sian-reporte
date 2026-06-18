@@ -54,6 +54,13 @@ canvas{max-width:100%}
 <h2>Embudo actual (acumulado, limpio)</h2>
 <div id="funnel"></div>
 
+<h2>Inversión Meta Ads</h2>
+<div class="grid" id="meta"></div>
+<div class="note" id="metanote" style="background:#eff6ff;border-color:#bfdbfe;color:#1e40af"></div>
+
+<h2>Leads calientes (probabilidad de cierre Odoo)</h2>
+<div class="grid" id="hot"></div>
+
 <h2>Fuentes · mes actual</h2>
 <table id="src"><thead><tr><th>Fuente</th><th>Leads (mes)</th><th>Activos</th><th>A ventas</th><th>Total histórico</th></tr></thead><tbody></tbody></table>
 
@@ -119,6 +126,22 @@ fetch('data.json?_='+Date.now()).then(r=>r.json()).then(D=>{
     bar('Abandonaron',f.abandono,tot,'#dc2626')+
     bar('Duplicados',f.duplicado,tot,'#d97706');
 
+  // Inversión Meta Ads
+  const M=D.meta;
+  if(M){
+    document.getElementById('meta').innerHTML=
+      '<div class="card"><div class="lbl">Inversión (campaña MSG)</div><div class="val">$'+fmt(M.spend)+'</div><div class="delta muted">MXN · al '+M.updated+'</div></div>'+
+      '<div class="card"><div class="lbl">Leads de Meta</div><div class="val">'+fmt(M.leads)+'</div></div>'+
+      '<div class="card"><div class="lbl">Costo por lead</div><div class="val">$'+N(M.cpl).toLocaleString('es-MX',{minimumFractionDigits:2,maximumFractionDigits:2})+'</div><div class="delta muted">MXN</div></div>';
+    document.getElementById('metanote').innerHTML='Atribución 1:1 con Meta (cada conversación de mensajería = un lead en el CRM). El costo por lead se recalcula a diario; la inversión se actualiza de forma manual (el robot no tiene acceso a la API de Meta). ROAS aún no calculable (0 cierres).';
+  }
+
+  // Leads calientes (probabilidad de cierre Odoo)
+  const HT=D.hot||{p50:0,p70:0};
+  document.getElementById('hot').innerHTML=
+    '<div class="card"><div class="lbl">Calientes · prob ≥ 50%</div><div class="val">'+fmt(HT.p50)+'</div></div>'+
+    '<div class="card"><div class="lbl">Muy calientes · prob ≥ 70%</div><div class="val">'+fmt(HT.p70)+'</div></div>';
+
   document.querySelector('#src tbody').innerHTML=D.fuentes.map(r=>
     '<tr><td>'+r.fuente+'</td><td>'+fmt(r.mtd)+'</td><td>'+fmt(r.act)+'</td><td>'+fmt(r.ventas)+'</td><td class="muted">'+fmt(r.total)+'</td></tr>').join('');
 
@@ -144,7 +167,8 @@ fetch('data.json?_='+Date.now()).then(r=>r.json()).then(D=>{
     'Los registros de prueba/QA se excluyen automáticamente; por eso la fuente <b>website_form</b> (que era 100% datos de prueba) no aparece.',
     'El embudo se angosta al pasar a un humano: de <b>'+fmt(activo)+'</b> leads activos, solo <b>'+fmt(aCall)+'</b> llegan a una llamada y <b>'+fmt(aCer)+'</b> quedan asignados a un cerrador.',
     'El <b>'+abPct+'%</b> abandona tras el agente AI, casi todo por “no contestó” — el cuello de botella es la velocidad de seguimiento, no la generación.',
-    'Aún no hay cierres registrados (<b>'+fmt(f.ganados)+'</b>): ciclo de venta largo, propio de cabañas de alto valor.'
+    'Hay <b>'+fmt(N((D.hot||{}).p50))+'</b> leads calientes (probabilidad de cierre ≥ 50%) y <b>'+fmt(N((D.hot||{}).p70))+'</b> muy calientes (≥ 70%): prioridad de contacto para los cerradores.',
+    'Costo por lead de Meta: <b>$'+N((D.meta||{}).cpl).toLocaleString('es-MX',{minimumFractionDigits:2,maximumFractionDigits:2})+' MXN</b>. Aún no hay cierres registrados (<b>'+fmt(f.ganados)+'</b>): ciclo de venta largo, propio de cabañas de alto valor.'
   ];
   document.getElementById('hallazgos').innerHTML=H.map(t=>'<li>'+t+'</li>').join('');
 
@@ -197,7 +221,7 @@ fetch('data.json?_='+Date.now()).then(r=>r.json()).then(D=>{
   }
 
   document.getElementById('foot').innerHTML=
-    'Total leads reales (histórico, sin datos de prueba): <b>'+fmt(f.leads)+'</b>. Se excluyen registros de prueba/QA. "Abandonaron" = no contestó / sin interés / spam. Zona horaria America/Cancún (−05). Inversión y conversaciones de Meta Ads se reportan por separado. Actualización automática diaria 10:00 Cancún.';
+    'Total leads reales (histórico, sin datos de prueba): <b>'+fmt(f.leads)+'</b>. Se excluyen registros de prueba/QA. "Abandonaron" = no contestó / sin interés / spam. "Leads calientes" usan la probabilidad de cierre de Odoo. Zona horaria America/Cancún (−05). Actualización automática diaria 10:00 Cancún.';
 }).catch(e=>{
   const el=document.getElementById('err');el.style.display='block';
   el.textContent='No se pudo cargar data.json: '+e;

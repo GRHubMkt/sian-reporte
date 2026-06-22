@@ -145,6 +145,33 @@ select coalesce(source,'(sin fuente)') fuente, count(*) total,
 from x group by 1 order by total desc
 """
 
+# Detalle de leads SIN datos personales (no se incluye nombre, telefono ni email).
+_DET_COLS = """
+ coalesce(nullif(odoo_lead_id,''),'-') ref,
+ to_char((first_contact_at at time zone 'America/Cancun'),'DD/MM') fecha,
+ coalesce(source,'(sin fuente)') fuente,
+ coalesce(odoo_stage,'(sin etapa)') etapa,
+ case when disposition is null then 'Activo' else disposition end estatus,
+ coalesce(round(odoo_probability)::int,0) prob,
+ coalesce(nullif(odoo_salesperson,''),'(sin asignar)') cerrador
+"""
+
+Q_DET_NUEVOS = f"""
+select {_DET_COLS}
+from public.lead_report
+where {NOTTEST}
+ and (first_contact_at at time zone 'America/Cancun')::date = (timezone('America/Cancun',now()))::date
+order by odoo_probability desc nulls last, last_activity_at desc nulls last
+"""
+
+Q_DET_VENTAS = f"""
+select {_DET_COLS}
+from public.lead_report
+where {NOTTEST} and was_handed_off
+order by last_activity_at desc nulls last
+limit 80
+"""
+
 
 def rows(cur, sql):
     cur.execute(sql)
@@ -164,6 +191,8 @@ def main():
     f = rows(cur, Q_FUNNEL)[0]
     src = rows(cur, Q_SRC)
     sk = rows(cur, Q_SANKEY)
+    det_nuevos = rows(cur, Q_DET_NUEVOS)
+    det_ventas = rows(cur, Q_DET_VENTAS)
     cur.close()
     conn.close()
 
@@ -193,6 +222,10 @@ def main():
             "chat_cer": i(r["chat_cer"]), "chat_sin": i(r["chat_sin"]),
         } for r in sk],
         "hot": {"p50": i(f["hot50"]), "p70": i(f["hot70"])},
+        "detalle_nuevos": [{"ref": r["ref"], "fecha": r["fecha"], "fuente": r["fuente"], "etapa": r["etapa"],
+                            "estatus": r["estatus"], "prob": i(r["prob"]), "cerrador": r["cerrador"]} for r in det_nuevos],
+        "detalle_ventas": [{"ref": r["ref"], "fecha": r["fecha"], "fuente": r["fuente"], "etapa": r["etapa"],
+                            "estatus": r["estatus"], "prob": i(r["prob"]), "cerrador": r["cerrador"]} for r in det_ventas],
     }
 
     meta_leads = next((i(r["total"]) for r in sk if r["fuente"] == "meta_ad"), 0)

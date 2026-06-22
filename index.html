@@ -79,7 +79,7 @@ canvas{max-width:100%}
 <h2>Hallazgos clave</h2>
 <ul id="hallazgos" style="margin:6px 0 0;padding-left:18px;line-height:1.7"></ul>
 
-<h2>Embudo por fuente (Sankey)</h2>
+<h2>Embudo por fuente (Sankey) <span class="muted" style="font-weight:400;font-size:12px" id="sk-periodo"></span></h2>
 <div style="display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--mut);margin-bottom:6px">
   <span style="color:#2563eb">&#9679; Fuente / llamada</span>
   <span style="color:#16a34a">&#9679; AI / avanza / cerrador</span>
@@ -196,6 +196,7 @@ fetch('data.json?_='+Date.now()).then(r=>r.json()).then(D=>{
   document.getElementById('hallazgos').innerHTML=H.map(t=>'<li>'+t+'</li>').join('');
 
   // Sankey por fuente
+  document.getElementById('sk-periodo').textContent= D.sankey_periodo? '· '+D.sankey_periodo : '';
   const SC={info:'#2563eb',ok:'#16a34a',bad:'#dc2626',warn:'#d97706',gray:'#9ca3af',text:'#16181d'};
   function build(d){
     const Nn=[],idx={},push=(k,name,val,col)=>{if(val<=0)return;idx[k]=Nn.length;Nn.push({name,val,color:col});};
@@ -244,7 +245,7 @@ fetch('data.json?_='+Date.now()).then(r=>r.json()).then(D=>{
   }
 
   document.getElementById('foot').innerHTML=
-    'Total leads reales (histórico, sin datos de prueba): <b>'+fmt(f.leads)+'</b>. Se excluyen registros de prueba/QA. "Abandonaron" = no contestó / sin interés / spam. Detalle de leads sin datos personales. Zona horaria America/Cancún (−05). Actualización automática diaria 10:00 Cancún.';
+    'Total leads reales (histórico, sin datos de prueba): <b>'+fmt(f.leads)+'</b>. Se excluyen registros de prueba/QA. "Abandonaron" = no contestó / sin interés / spam. El Sankey muestra los últimos 7 días. Zona horaria America/Cancún (−05). Actualización automática diaria 10:00 Cancún.';
 }).catch(e=>{
   const el=document.getElementById('err');el.style.display='block';
   el.textContent='No se pudo cargar data.json: '+e;

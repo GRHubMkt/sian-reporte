@@ -127,6 +127,7 @@ with x as (
     coalesce(outbound_call_count,0) oc,
     was_handed_off
   from public.lead_report where {NOTTEST}
+    and (first_contact_at at time zone 'America/Cancun')::date >= (timezone('America/Cancun',now()))::date - 6
 )
 select coalesce(source,'(sin fuente)') fuente, count(*) total,
  count(*) filter (where ai) ai, count(*) filter (where not ai) sin_ai,
@@ -197,6 +198,8 @@ def main():
     conn.close()
 
     now = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=-5)))
+    sk_desde = now.date() - datetime.timedelta(days=6)
+    sankey_periodo = "{} – {} (últimos 7 días)".format(sk_desde.strftime("%d/%m"), now.strftime("%d/%m"))
     data = {
         "generado_en": now.strftime("%d/%m/%Y %H:%M") + " (Cancún)",
         "today_lbl": h["today_lbl"],
@@ -222,6 +225,7 @@ def main():
             "chat_cer": i(r["chat_cer"]), "chat_sin": i(r["chat_sin"]),
         } for r in sk],
         "hot": {"p50": i(f["hot50"]), "p70": i(f["hot70"])},
+        "sankey_periodo": sankey_periodo,
         "detalle_nuevos": [{"ref": r["ref"], "fecha": r["fecha"], "fuente": r["fuente"], "etapa": r["etapa"],
                             "estatus": r["estatus"], "prob": i(r["prob"]), "cerrador": r["cerrador"]} for r in det_nuevos],
         "detalle_ventas": [{"ref": r["ref"], "fecha": r["fecha"], "fuente": r["fuente"], "etapa": r["etapa"],

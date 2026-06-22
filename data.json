@@ -1,5 +1,5 @@
 {
-  "generado_en": "22/06/2026 14:54 (Cancún)",
+  "generado_en": "22/06/2026 15:18 (Cancún)",
   "today_lbl": "22/06/2026",
   "mes_act": "06/2026",
   "mes_ant": "05/2026",
@@ -153,54 +153,36 @@
   "sankey": [
     {
       "fuente": "meta_ad",
-      "total": 642,
-      "ai": 642,
+      "total": 194,
+      "ai": 194,
       "sin_ai": 0,
-      "ai_activo": 394,
-      "ai_aband": 201,
-      "ai_dup": 47,
+      "ai_activo": 152,
+      "ai_aband": 42,
+      "ai_dup": 0,
       "sinai_activo": 0,
       "sinai_aband": 0,
       "sinai_dup": 0,
-      "call": 209,
-      "chat": 185,
-      "call_cer": 78,
-      "call_sin": 131,
-      "chat_cer": 18,
-      "chat_sin": 167
+      "call": 27,
+      "chat": 125,
+      "call_cer": 16,
+      "call_sin": 11,
+      "chat_cer": 7,
+      "chat_sin": 118
     },
     {
       "fuente": "organic",
-      "total": 12,
-      "ai": 12,
+      "total": 1,
+      "ai": 1,
       "sin_ai": 0,
-      "ai_activo": 6,
-      "ai_aband": 5,
-      "ai_dup": 1,
+      "ai_activo": 0,
+      "ai_aband": 1,
+      "ai_dup": 0,
       "sinai_activo": 0,
       "sinai_aband": 0,
       "sinai_dup": 0,
-      "call": 5,
-      "chat": 1,
-      "call_cer": 2,
-      "call_sin": 3,
-      "chat_cer": 1,
-      "chat_sin": 0
-    },
-    {
-      "fuente": "voice",
-      "total": 1,
-      "ai": 0,
-      "sin_ai": 1,
-      "ai_activo": 0,
-      "ai_aband": 0,
-      "ai_dup": 0,
-      "sinai_activo": 1,
-      "sinai_aband": 0,
-      "sinai_dup": 0,
-      "call": 1,
+      "call": 0,
       "chat": 0,
-      "call_cer": 1,
+      "call_cer": 0,
       "call_sin": 0,
       "chat_cer": 0,
       "chat_sin": 0
@@ -210,6 +192,7 @@
     "p50": 49,
     "p70": 13
   },
+  "sankey_periodo": "16/06 – 22/06 (últimos 7 días)",
   "detalle_nuevos": [
     {
       "ref": "5825",
@@ -1180,8 +1163,8 @@
   "meta": {
     "spend": 6954.91,
     "updated": "17/06/2026",
-    "leads": 642,
-    "cpl": 10.83,
+    "leads": 194,
+    "cpl": 35.85,
     "auto": false
   }
 }

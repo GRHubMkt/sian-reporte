@@ -1,52 +1,52 @@
 {
-  "generado_en": "21/06/2026 11:25 (Cancún)",
-  "today_lbl": "21/06/2026",
+  "generado_en": "22/06/2026 13:41 (Cancún)",
+  "today_lbl": "22/06/2026",
   "mes_act": "06/2026",
   "mes_ant": "05/2026",
   "hoy": {
-    "leads": 9,
-    "activos": 9,
-    "ventas": 0,
-    "llamadas": 0,
-    "chats": 9,
-    "abandono": 0
-  },
-  "ayer": {
-    "leads": 21,
-    "activos": 21,
-    "ventas": 1,
+    "leads": 22,
+    "activos": 22,
+    "ventas": 2,
     "llamadas": 0,
     "chats": 22,
     "abandono": 0
   },
+  "ayer": {
+    "leads": 28,
+    "activos": 28,
+    "ventas": 0,
+    "llamadas": 2,
+    "chats": 29,
+    "abandono": 0
+  },
   "mtd": {
-    "leads": 480,
-    "ventas": 99,
-    "llamadas": 478,
-    "chats": 748
+    "leads": 521,
+    "ventas": 101,
+    "llamadas": 550,
+    "chats": 813
   },
   "pm_full": {
     "leads": 129,
     "ventas": 28,
-    "llamadas": 270,
-    "chats": 264
+    "llamadas": 273,
+    "chats": 266
   },
   "pm_mtd_leads": 1,
   "funnel": {
-    "leads": 609,
-    "activos": 355,
+    "leads": 650,
+    "activos": 396,
     "abandono": 205,
     "duplicado": 48,
-    "ventas": 127,
+    "ventas": 129,
     "ganados": 0
   },
   "fuentes": [
     {
       "fuente": "meta_ad",
-      "mtd": 473,
-      "act": 290,
-      "ventas": 96,
-      "total": 596
+      "mtd": 514,
+      "act": 331,
+      "ventas": 98,
+      "total": 637
     },
     {
       "fuente": "organic",
@@ -64,11 +64,6 @@
     }
   ],
   "daily": [
-    {
-      "lbl": "01/06",
-      "leads": 15,
-      "ventas": 8
-    },
     {
       "lbl": "04/06",
       "leads": 1,
@@ -146,28 +141,33 @@
     },
     {
       "lbl": "21/06",
-      "leads": 9,
+      "leads": 28,
       "ventas": 0
+    },
+    {
+      "lbl": "22/06",
+      "leads": 22,
+      "ventas": 2
     }
   ],
   "sankey": [
     {
       "fuente": "meta_ad",
-      "total": 596,
-      "ai": 596,
+      "total": 637,
+      "ai": 637,
       "sin_ai": 0,
-      "ai_activo": 348,
+      "ai_activo": 389,
       "ai_aband": 201,
       "ai_dup": 47,
       "sinai_activo": 0,
       "sinai_aband": 0,
       "sinai_dup": 0,
-      "call": 199,
-      "chat": 149,
-      "call_cer": 76,
-      "call_sin": 123,
+      "call": 208,
+      "chat": 181,
+      "call_cer": 78,
+      "call_sin": 130,
       "chat_cer": 18,
-      "chat_sin": 131
+      "chat_sin": 163
     },
     {
       "fuente": "organic",
@@ -208,13 +208,13 @@
   ],
   "hot": {
     "p50": 49,
-    "p70": 12
+    "p70": 13
   },
   "meta": {
     "spend": 6954.91,
     "updated": "17/06/2026",
-    "leads": 596,
-    "cpl": 11.67,
+    "leads": 637,
+    "cpl": 10.92,
     "auto": false
   }
 }

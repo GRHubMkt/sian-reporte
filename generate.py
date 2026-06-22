@@ -232,7 +232,8 @@ def main():
                             "estatus": r["estatus"], "prob": i(r["prob"]), "cerrador": r["cerrador"]} for r in det_ventas],
     }
 
-    meta_leads = next((i(r["total"]) for r in sk if r["fuente"] == "meta_ad"), 0)
+    # Total de leads de Meta (histórico) desde 'src', no desde el Sankey (que es de 7 días)
+    meta_leads = next((i(r["total"]) for r in src if r["fuente"] == "meta_ad"), 0)
     live_spend, auto = fetch_meta_spend()
     spend = live_spend if live_spend is not None else round(META_SPEND_MXN, 2)
     updated = now.strftime("%d/%m/%Y") if auto else META_SPEND_DATE

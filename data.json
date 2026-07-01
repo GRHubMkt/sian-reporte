@@ -1,9 +1,17 @@
 {
-  "generado_en": "30/06/2026 12:04 (Cancún)",
-  "today_lbl": "30/06/2026",
-  "mes_act": "06/2026",
-  "mes_ant": "05/2026",
+  "generado_en": "01/07/2026 12:07 (Cancún)",
+  "today_lbl": "01/07/2026",
+  "mes_act": "07/2026",
+  "mes_ant": "06/2026",
   "hoy": {
+    "leads": 1,
+    "activos": 0,
+    "ventas": 0,
+    "llamadas": 0,
+    "chats": 1,
+    "abandono": 1
+  },
+  "ayer": {
     "leads": 0,
     "activos": 0,
     "ventas": 0,
@@ -11,64 +19,51 @@
     "chats": 0,
     "abandono": 0
   },
-  "ayer": {
-    "leads": 1,
-    "activos": 1,
-    "ventas": 1,
-    "llamadas": 0,
-    "chats": 1,
-    "abandono": 0
-  },
   "mtd": {
-    "leads": 678,
-    "ventas": 167,
-    "llamadas": 1219,
-    "chats": 1082
+    "leads": 1,
+    "ventas": 0,
+    "llamadas": 0,
+    "chats": 1
   },
   "pm_full": {
-    "leads": 129,
-    "ventas": 28,
-    "llamadas": 477,
-    "chats": 275
+    "leads": 678,
+    "ventas": 172,
+    "llamadas": 1261,
+    "chats": 1086
   },
-  "pm_mtd_leads": 68,
+  "pm_mtd_leads": 15,
   "funnel": {
-    "leads": 807,
-    "activos": 449,
-    "abandono": 293,
+    "leads": 808,
+    "activos": 381,
+    "abandono": 361,
     "duplicado": 53,
-    "ventas": 195,
+    "ventas": 200,
     "ganados": 0
   },
   "fuentes": [
     {
       "fuente": "meta_ad",
-      "mtd": 667,
-      "act": 380,
-      "ventas": 163,
+      "mtd": 0,
+      "act": 0,
+      "ventas": 0,
       "total": 790
     },
     {
       "fuente": "organic",
-      "mtd": 10,
-      "act": 7,
-      "ventas": 3,
-      "total": 16
+      "mtd": 1,
+      "act": 0,
+      "ventas": 0,
+      "total": 17
     },
     {
       "fuente": "voice",
-      "mtd": 1,
-      "act": 1,
-      "ventas": 1,
+      "mtd": 0,
+      "act": 0,
+      "ventas": 0,
       "total": 1
     }
   ],
   "daily": [
-    {
-      "lbl": "10/06",
-      "leads": 76,
-      "ventas": 19
-    },
     {
       "lbl": "11/06",
       "leads": 43,
@@ -87,7 +82,7 @@
     {
       "lbl": "14/06",
       "leads": 36,
-      "ventas": 9
+      "ventas": 10
     },
     {
       "lbl": "15/06",
@@ -132,7 +127,7 @@
     {
       "lbl": "23/06",
       "leads": 29,
-      "ventas": 3
+      "ventas": 7
     },
     {
       "lbl": "24/06",
@@ -163,53 +158,104 @@
       "lbl": "29/06",
       "leads": 1,
       "ventas": 1
+    },
+    {
+      "lbl": "01/07",
+      "leads": 1,
+      "ventas": 0
     }
   ],
   "sankey": [
     {
       "fuente": "meta_ad",
-      "total": 109,
-      "ai": 109,
+      "total": 88,
+      "ai": 88,
       "sin_ai": 0,
-      "ai_activo": 62,
-      "ai_aband": 45,
-      "ai_dup": 2,
+      "ai_activo": 36,
+      "ai_aband": 51,
+      "ai_dup": 1,
       "sinai_activo": 0,
       "sinai_aband": 0,
       "sinai_dup": 0,
-      "call": 20,
-      "chat": 42,
-      "call_cer": 20,
+      "call": 10,
+      "chat": 26,
+      "call_cer": 10,
       "call_sin": 0,
-      "chat_cer": 16,
-      "chat_sin": 26
+      "chat_cer": 13,
+      "chat_sin": 13
     },
     {
       "fuente": "organic",
-      "total": 3,
-      "ai": 3,
+      "total": 4,
+      "ai": 4,
       "sin_ai": 0,
       "ai_activo": 3,
-      "ai_aband": 0,
+      "ai_aband": 1,
       "ai_dup": 0,
       "sinai_activo": 0,
       "sinai_aband": 0,
       "sinai_dup": 0,
-      "call": 0,
-      "chat": 3,
-      "call_cer": 0,
+      "call": 1,
+      "chat": 2,
+      "call_cer": 1,
       "call_sin": 0,
-      "chat_cer": 1,
+      "chat_cer": 0,
       "chat_sin": 2
     }
   ],
   "hot": {
-    "p50": 38,
+    "p50": 35,
     "p70": 3
   },
-  "sankey_periodo": "24/06 – 30/06 (últimos 7 días)",
-  "detalle_nuevos": [],
+  "sankey_periodo": "25/06 – 01/07 (últimos 7 días)",
+  "detalle_nuevos": [
+    {
+      "ref": "-",
+      "fecha": "01/07",
+      "fuente": "organic",
+      "etapa": "(sin etapa)",
+      "estatus": "no_answer",
+      "prob": 0,
+      "cerrador": "(sin asignar)"
+    }
+  ],
   "detalle_ventas": [
+    {
+      "ref": "5069",
+      "fecha": "05/06",
+      "fuente": "voice",
+      "etapa": "Nuevo Lead",
+      "estatus": "Activo",
+      "prob": 8,
+      "cerrador": "Peregrino"
+    },
+    {
+      "ref": "5423",
+      "fecha": "13/06",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead",
+      "estatus": "Activo",
+      "prob": 3,
+      "cerrador": "Peregrino"
+    },
+    {
+      "ref": "5422",
+      "fecha": "13/06",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead",
+      "estatus": "Activo",
+      "prob": 3,
+      "cerrador": "Peregrino"
+    },
+    {
+      "ref": "5756",
+      "fecha": "20/06",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino"
+    },
     {
       "ref": "5896",
       "fecha": "24/06",
@@ -220,19 +266,10 @@
       "cerrador": "Peregrino"
     },
     {
-      "ref": "5938",
+      "ref": "5932",
       "fecha": "26/06",
-      "fuente": "meta_ad",
-      "etapa": "Nuevo Lead",
-      "estatus": "Activo",
-      "prob": 2,
-      "cerrador": "Peregrino"
-    },
-    {
-      "ref": "5812",
-      "fecha": "22/06",
-      "fuente": "meta_ad",
-      "etapa": "Nuevo Lead",
+      "fuente": "organic",
+      "etapa": "Precalificado MQL",
       "estatus": "Activo",
       "prob": 1,
       "cerrador": "Peregrino"
@@ -247,12 +284,48 @@
       "cerrador": "Peregrino"
     },
     {
-      "ref": "5971",
-      "fecha": "29/06",
+      "ref": "5520",
+      "fecha": "14/06",
       "fuente": "meta_ad",
       "etapa": "Nuevo Lead",
       "estatus": "Activo",
-      "prob": 2,
+      "prob": 1,
+      "cerrador": "Peregrino"
+    },
+    {
+      "ref": "4888",
+      "fecha": "29/05",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead",
+      "estatus": "Activo",
+      "prob": 1,
+      "cerrador": "Peregrino"
+    },
+    {
+      "ref": "4940",
+      "fecha": "31/05",
+      "fuente": "meta_ad",
+      "etapa": "Seguimiento",
+      "estatus": "Activo",
+      "prob": 65,
+      "cerrador": "Peregrino"
+    },
+    {
+      "ref": "5238",
+      "fecha": "31/05",
+      "fuente": "meta_ad",
+      "etapa": "Seguimiento",
+      "estatus": "Activo",
+      "prob": 37,
+      "cerrador": "Peregrino"
+    },
+    {
+      "ref": "5239",
+      "fecha": "31/05",
+      "fuente": "meta_ad",
+      "etapa": "Seguimiento",
+      "estatus": "Activo",
+      "prob": 37,
       "cerrador": "Peregrino"
     },
     {
@@ -262,6 +335,78 @@
       "etapa": "Nuevo Lead",
       "estatus": "duplicate",
       "prob": 78,
+      "cerrador": "Peregrino"
+    },
+    {
+      "ref": "5279",
+      "fecha": "10/06",
+      "fuente": "meta_ad",
+      "etapa": "Seguimiento",
+      "estatus": "Activo",
+      "prob": 37,
+      "cerrador": "Peregrino"
+    },
+    {
+      "ref": "5254",
+      "fecha": "10/06",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead",
+      "estatus": "Activo",
+      "prob": 1,
+      "cerrador": "Peregrino"
+    },
+    {
+      "ref": "5262",
+      "fecha": "11/06",
+      "fuente": "meta_ad",
+      "etapa": "Seguimiento",
+      "estatus": "Activo",
+      "prob": 37,
+      "cerrador": "Peregrino"
+    },
+    {
+      "ref": "5267",
+      "fecha": "11/06",
+      "fuente": "meta_ad",
+      "etapa": "Seguimiento",
+      "estatus": "Activo",
+      "prob": 37,
+      "cerrador": "Peregrino"
+    },
+    {
+      "ref": "5274",
+      "fecha": "11/06",
+      "fuente": "meta_ad",
+      "etapa": "Seguimiento",
+      "estatus": "Activo",
+      "prob": 65,
+      "cerrador": "Peregrino"
+    },
+    {
+      "ref": "5938",
+      "fecha": "26/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación SQL",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino"
+    },
+    {
+      "ref": "5812",
+      "fecha": "22/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación SQL",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino"
+    },
+    {
+      "ref": "5971",
+      "fecha": "29/06",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead",
+      "estatus": "Activo",
+      "prob": 2,
       "cerrador": "Peregrino"
     },
     {
@@ -378,7 +523,7 @@
       "fuente": "meta_ad",
       "etapa": "Precalificado MQL",
       "estatus": "Activo",
-      "prob": 0,
+      "prob": 1,
       "cerrador": "Peregrino"
     },
     {
@@ -415,15 +560,6 @@
       "etapa": "Nuevo Lead",
       "estatus": "Activo",
       "prob": 1,
-      "cerrador": "Peregrino"
-    },
-    {
-      "ref": "5069",
-      "fecha": "05/06",
-      "fuente": "voice",
-      "etapa": "Nuevo Lead",
-      "estatus": "Activo",
-      "prob": 8,
       "cerrador": "Peregrino"
     },
     {
@@ -476,16 +612,7 @@
       "fecha": "15/06",
       "fuente": "meta_ad",
       "etapa": "Nuevo Lead",
-      "estatus": "Activo",
-      "prob": 2,
-      "cerrador": "Peregrino"
-    },
-    {
-      "ref": "5756",
-      "fecha": "20/06",
-      "fuente": "meta_ad",
-      "etapa": "Nuevo Lead",
-      "estatus": "Activo",
+      "estatus": "not_interested",
       "prob": 2,
       "cerrador": "Peregrino"
     },
@@ -661,24 +788,6 @@
       "cerrador": "Peregrino"
     },
     {
-      "ref": "5274",
-      "fecha": "11/06",
-      "fuente": "meta_ad",
-      "etapa": "Seguimiento",
-      "estatus": "Activo",
-      "prob": 65,
-      "cerrador": "Peregrino"
-    },
-    {
-      "ref": "5279",
-      "fecha": "10/06",
-      "fuente": "meta_ad",
-      "etapa": "Seguimiento",
-      "estatus": "Activo",
-      "prob": 37,
-      "cerrador": "Peregrino"
-    },
-    {
       "ref": "5244",
       "fecha": "10/06",
       "fuente": "meta_ad",
@@ -829,105 +938,6 @@
       "etapa": "Nuevo Lead",
       "estatus": "Activo",
       "prob": 1,
-      "cerrador": "Peregrino"
-    },
-    {
-      "ref": "5273",
-      "fecha": "11/06",
-      "fuente": "meta_ad",
-      "etapa": "Nuevo Lead",
-      "estatus": "Activo",
-      "prob": 1,
-      "cerrador": "Peregrino"
-    },
-    {
-      "ref": "5269",
-      "fecha": "11/06",
-      "fuente": "meta_ad",
-      "etapa": "Nuevo Lead",
-      "estatus": "Activo",
-      "prob": 1,
-      "cerrador": "Peregrino"
-    },
-    {
-      "ref": "5216",
-      "fecha": "10/06",
-      "fuente": "meta_ad",
-      "etapa": "Nuevo Lead",
-      "estatus": "no_answer",
-      "prob": 1,
-      "cerrador": "Peregrino"
-    },
-    {
-      "ref": "5048",
-      "fecha": "29/05",
-      "fuente": "meta_ad",
-      "etapa": "Nuevo Lead",
-      "estatus": "duplicate",
-      "prob": 1,
-      "cerrador": "Peregrino"
-    },
-    {
-      "ref": "5291",
-      "fecha": "11/06",
-      "fuente": "meta_ad",
-      "etapa": "Nuevo Lead",
-      "estatus": "Activo",
-      "prob": 1,
-      "cerrador": "Peregrino"
-    },
-    {
-      "ref": "5970",
-      "fecha": "27/06",
-      "fuente": "meta_ad",
-      "etapa": "Nuevo Lead",
-      "estatus": "Activo",
-      "prob": 2,
-      "cerrador": "Peregrino"
-    },
-    {
-      "ref": "5932",
-      "fecha": "26/06",
-      "fuente": "organic",
-      "etapa": "Seguimiento",
-      "estatus": "Activo",
-      "prob": 3,
-      "cerrador": "Peregrino"
-    },
-    {
-      "ref": "4973",
-      "fecha": "31/05",
-      "fuente": "meta_ad",
-      "etapa": "Seguimiento",
-      "estatus": "duplicate",
-      "prob": 65,
-      "cerrador": "Peregrino"
-    },
-    {
-      "ref": "5943",
-      "fecha": "27/06",
-      "fuente": "meta_ad",
-      "etapa": "Nuevo Lead",
-      "estatus": "Activo",
-      "prob": 1,
-      "cerrador": "Peregrino"
-    },
-    {
-      "ref": "5300",
-      "fecha": "11/06",
-      "fuente": "meta_ad",
-      "etapa": "Seguimiento",
-      "estatus": "duplicate",
-      "prob": 37,
-      "cerrador": "Peregrino"
-    },
-    {
-      "ref": "4997",
-      "fecha": "01/06",
-      "fuente": "meta_ad",
-      "etapa": "Seguimiento",
-      "estatus": "no_answer",
-      "prob": 65,
       "cerrador": "Peregrino"
     }
   ],

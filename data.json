@@ -1,6 +1,6 @@
 {
-  "generado_en": "11/07/2026 10:44 (Cancún)",
-  "today_lbl": "11/07/2026",
+  "generado_en": "12/07/2026 10:51 (Cancún)",
+  "today_lbl": "12/07/2026",
   "mes_act": "07/2026",
   "mes_ant": "06/2026",
   "hoy": {
@@ -28,10 +28,10 @@
   "pm_full": {
     "leads": 678,
     "ventas": 221,
-    "llamadas": 1829,
+    "llamadas": 1840,
     "chats": 1224
   },
-  "pm_mtd_leads": 168,
+  "pm_mtd_leads": 210,
   "funnel": {
     "leads": 810,
     "activos": 201,
@@ -64,11 +64,6 @@
     }
   ],
   "daily": [
-    {
-      "lbl": "21/06",
-      "leads": 28,
-      "ventas": 14
-    },
     {
       "lbl": "22/06",
       "leads": 38,
@@ -144,14 +139,59 @@
     "p50": 9,
     "p70": 1
   },
-  "sankey_periodo": "05/07 – 11/07 (últimos 7 días)",
+  "sankey_periodo": "06/07 – 12/07 (últimos 7 días)",
   "detalle_nuevos": [],
   "detalle_ventas": [
     {
-      "ref": "5750",
-      "fecha": "20/06",
+      "ref": "5845",
+      "fecha": "23/06",
+      "fuente": "meta_ad",
+      "etapa": "Seguimiento",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino"
+    },
+    {
+      "ref": "5842",
+      "fecha": "23/06",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead",
+      "estatus": "Activo",
+      "prob": 1,
+      "cerrador": "Peregrino"
+    },
+    {
+      "ref": "5821",
+      "fecha": "22/06",
       "fuente": "meta_ad",
       "etapa": "Data Collection y Calificación SQL",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino"
+    },
+    {
+      "ref": "5811",
+      "fecha": "22/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación SQL",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino"
+    },
+    {
+      "ref": "5809",
+      "fecha": "22/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación SQL",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino"
+    },
+    {
+      "ref": "5806",
+      "fecha": "22/06",
+      "fuente": "meta_ad",
+      "etapa": "Seguimiento",
       "estatus": "Activo",
       "prob": 2,
       "cerrador": "Peregrino"
@@ -186,6 +226,15 @@
     {
       "ref": "5772",
       "fecha": "21/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación SQL",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino"
+    },
+    {
+      "ref": "5750",
+      "fecha": "20/06",
       "fuente": "meta_ad",
       "etapa": "Data Collection y Calificación SQL",
       "estatus": "Activo",
@@ -526,51 +575,6 @@
       "cerrador": "Peregrino"
     },
     {
-      "ref": "5842",
-      "fecha": "23/06",
-      "fuente": "meta_ad",
-      "etapa": "Nuevo Lead",
-      "estatus": "Activo",
-      "prob": 1,
-      "cerrador": "Peregrino"
-    },
-    {
-      "ref": "5821",
-      "fecha": "22/06",
-      "fuente": "meta_ad",
-      "etapa": "Data Collection y Calificación SQL",
-      "estatus": "Activo",
-      "prob": 2,
-      "cerrador": "Peregrino"
-    },
-    {
-      "ref": "5811",
-      "fecha": "22/06",
-      "fuente": "meta_ad",
-      "etapa": "Data Collection y Calificación SQL",
-      "estatus": "Activo",
-      "prob": 2,
-      "cerrador": "Peregrino"
-    },
-    {
-      "ref": "5809",
-      "fecha": "22/06",
-      "fuente": "meta_ad",
-      "etapa": "Data Collection y Calificación SQL",
-      "estatus": "Activo",
-      "prob": 2,
-      "cerrador": "Peregrino"
-    },
-    {
-      "ref": "5806",
-      "fecha": "22/06",
-      "fuente": "meta_ad",
-      "etapa": "Seguimiento",
-      "estatus": "Activo",
-      "prob": 2,
-      "cerrador": "Peregrino"
-    },
-    {
       "ref": "5776",
       "fecha": "21/06",
       "fuente": "meta_ad",
@@ -856,15 +860,6 @@
       "etapa": "Nuevo Lead",
       "estatus": "Activo",
       "prob": 2,
-      "cerrador": "Peregrino"
-    },
-    {
-      "ref": "4897",
-      "fecha": "29/05",
-      "fuente": "meta_ad",
-      "etapa": "Nuevo Lead",
-      "estatus": "Activo",
-      "prob": 1,
       "cerrador": "Peregrino"
     }
   ],

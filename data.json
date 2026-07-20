@@ -1,6 +1,6 @@
 {
-  "generado_en": "19/07/2026 10:48 (Cancún)",
-  "today_lbl": "19/07/2026",
+  "generado_en": "20/07/2026 11:19 (Cancún)",
+  "today_lbl": "20/07/2026",
   "mes_act": "07/2026",
   "mes_ant": "06/2026",
   "hoy": {
@@ -31,12 +31,12 @@
     "llamadas": 2063,
     "chats": 1267
   },
-  "pm_mtd_leads": 450,
+  "pm_mtd_leads": 471,
   "funnel": {
     "leads": 810,
-    "activos": 201,
-    "abandono": 488,
-    "duplicado": 102,
+    "activos": 191,
+    "abandono": 490,
+    "duplicado": 97,
     "ventas": 249,
     "ganados": 0
   },
@@ -65,11 +65,6 @@
   ],
   "daily": [
     {
-      "lbl": "29/06",
-      "leads": 1,
-      "ventas": 1
-    },
-    {
       "lbl": "01/07",
       "leads": 2,
       "ventas": 0
@@ -85,7 +80,7 @@
     "p50": 8,
     "p70": 0
   },
-  "sankey_periodo": "13/07 – 19/07 (últimos 7 días)",
+  "sankey_periodo": "14/07 – 20/07 (últimos 7 días)",
   "detalle_nuevos": [],
   "detalle_ventas": [
     {
@@ -804,7 +799,7 @@
       "fecha": "18/06",
       "fuente": "meta_ad",
       "etapa": "Data Collection y Calificación SQL",
-      "estatus": "Activo",
+      "estatus": "costo_elevado",
       "prob": 2,
       "cerrador": "Peregrino"
     }

@@ -1,6 +1,6 @@
 {
-  "generado_en": "20/07/2026 11:19 (Cancún)",
-  "today_lbl": "20/07/2026",
+  "generado_en": "21/07/2026 11:16 (Cancún)",
+  "today_lbl": "21/07/2026",
   "mes_act": "07/2026",
   "mes_ant": "06/2026",
   "hoy": {
@@ -28,10 +28,10 @@
   "pm_full": {
     "leads": 678,
     "ventas": 221,
-    "llamadas": 2063,
+    "llamadas": 2064,
     "chats": 1267
   },
-  "pm_mtd_leads": 471,
+  "pm_mtd_leads": 499,
   "funnel": {
     "leads": 810,
     "activos": 191,
@@ -80,9 +80,18 @@
     "p50": 8,
     "p70": 0
   },
-  "sankey_periodo": "14/07 – 20/07 (últimos 7 días)",
+  "sankey_periodo": "15/07 – 21/07 (últimos 7 días)",
   "detalle_nuevos": [],
   "detalle_ventas": [
+    {
+      "ref": "5069",
+      "fecha": "05/06",
+      "fuente": "voice",
+      "etapa": "Nuevo Lead",
+      "estatus": "Activo",
+      "prob": 8,
+      "cerrador": "Peregrino"
+    },
     {
       "ref": "5424",
       "fecha": "12/06",
@@ -792,15 +801,6 @@
       "etapa": "Bottom tier",
       "estatus": "Activo",
       "prob": 1,
-      "cerrador": "Peregrino"
-    },
-    {
-      "ref": "5656",
-      "fecha": "18/06",
-      "fuente": "meta_ad",
-      "etapa": "Data Collection y Calificación SQL",
-      "estatus": "costo_elevado",
-      "prob": 2,
       "cerrador": "Peregrino"
     }
   ],

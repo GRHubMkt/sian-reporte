@@ -1,29 +1,29 @@
 {
-  "generado_en": "03/08/2026 12:04 (Cancún)",
-  "today_lbl": "03/08/2026",
+  "generado_en": "04/08/2026 11:45 (Cancún)",
+  "today_lbl": "04/08/2026",
   "mes_act": "08/2026",
   "mes_ant": "07/2026",
   "hoy": {
-    "leads": 0,
-    "activos": 0,
-    "ventas": 0,
+    "leads": 6,
+    "activos": 6,
+    "ventas": 1,
     "llamadas": 0,
-    "chats": 0,
+    "chats": 6,
     "abandono": 0
   },
   "ayer": {
-    "leads": 0,
-    "activos": 0,
-    "ventas": 0,
-    "llamadas": 0,
-    "chats": 0,
+    "leads": 6,
+    "activos": 5,
+    "ventas": 2,
+    "llamadas": 4,
+    "chats": 8,
     "abandono": 0
   },
   "mtd": {
-    "leads": 0,
-    "ventas": 0,
-    "llamadas": 0,
-    "chats": 0
+    "leads": 12,
+    "ventas": 3,
+    "llamadas": 4,
+    "chats": 14
   },
   "pm_full": {
     "leads": 3,
@@ -33,20 +33,20 @@
   },
   "pm_mtd_leads": 2,
   "funnel": {
-    "leads": 810,
-    "activos": 191,
+    "leads": 822,
+    "activos": 202,
     "abandono": 490,
     "duplicado": 97,
-    "ventas": 249,
-    "ganados": 0
+    "ventas": 252,
+    "ganados": 6
   },
   "fuentes": [
     {
       "fuente": "meta_ad",
-      "mtd": 0,
-      "act": 0,
-      "ventas": 0,
-      "total": 790
+      "mtd": 12,
+      "act": 11,
+      "ventas": 3,
+      "total": 802
     },
     {
       "fuente": "organic",
@@ -63,675 +63,47 @@
       "total": 1
     }
   ],
-  "daily": [],
-  "sankey": [],
+  "daily": [
+    {
+      "lbl": "03/08",
+      "leads": 6,
+      "ventas": 2
+    },
+    {
+      "lbl": "04/08",
+      "leads": 6,
+      "ventas": 1
+    }
+  ],
+  "sankey": [
+    {
+      "fuente": "meta_ad",
+      "total": 12,
+      "ai": 12,
+      "sin_ai": 0,
+      "ai_activo": 11,
+      "ai_aband": 1,
+      "ai_dup": 0,
+      "sinai_activo": 0,
+      "sinai_aband": 0,
+      "sinai_dup": 0,
+      "call": 2,
+      "chat": 9,
+      "call_cer": 2,
+      "call_sin": 0,
+      "chat_cer": 1,
+      "chat_sin": 8
+    }
+  ],
   "hot": {
-    "p50": 0,
+    "p50": 8,
     "p70": 0
   },
-  "sankey_periodo": "28/07 – 03/08 (últimos 7 días)",
-  "detalle_nuevos": [],
-  "detalle_ventas": [
+  "sankey_periodo": "29/07 – 04/08 (últimos 7 días)",
+  "detalle_nuevos": [
     {
       "ref": "-",
-      "fecha": "05/06",
-      "fuente": "voice",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "12/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "duplicate",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "10/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "11/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "10/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "29/05",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "duplicate",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "27/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "16/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "22/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "26/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "27/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "28/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "27/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "22/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "27/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "24/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "12/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "26/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "22/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "30/05",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "duplicate",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "01/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "17/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "10/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "01/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "duplicate",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "28/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "22/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "22/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "27/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "21/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "22/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "not_interested",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "27/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "26/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "10/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "duplicate",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "22/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "26/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "13/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "26/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "23/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "22/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "22/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "22/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "22/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "21/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "21/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "16/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "12/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "duplicate",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "20/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "13/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "21/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "23/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "20/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "23/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "23/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "22/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "22/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "21/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "20/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "21/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "21/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "21/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "21/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "21/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "26/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "contactar_despues",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "29/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "27/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "23/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "26/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "25/06",
-      "fuente": "organic",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "26/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "20/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "20/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "20/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "19/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "22/06",
+      "fecha": "04/08",
       "fuente": "meta_ad",
       "etapa": "(sin etapa)",
       "estatus": "Activo",
@@ -740,7 +112,7 @@
     },
     {
       "ref": "-",
-      "fecha": "22/06",
+      "fecha": "04/08",
       "fuente": "meta_ad",
       "etapa": "(sin etapa)",
       "estatus": "Activo",
@@ -749,25 +121,16 @@
     },
     {
       "ref": "-",
-      "fecha": "21/06",
+      "fecha": "04/08",
       "fuente": "meta_ad",
       "etapa": "(sin etapa)",
       "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "20/06",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "duplicate",
       "prob": 0,
       "cerrador": "(sin asignar)"
     },
     {
       "ref": "-",
-      "fecha": "21/06",
+      "fecha": "04/08",
       "fuente": "meta_ad",
       "etapa": "(sin etapa)",
       "estatus": "Activo",
@@ -776,7 +139,7 @@
     },
     {
       "ref": "-",
-      "fecha": "23/06",
+      "fecha": "04/08",
       "fuente": "meta_ad",
       "etapa": "(sin etapa)",
       "estatus": "Activo",
@@ -785,7 +148,7 @@
     },
     {
       "ref": "-",
-      "fecha": "20/06",
+      "fecha": "04/08",
       "fuente": "meta_ad",
       "etapa": "(sin etapa)",
       "estatus": "Activo",
@@ -793,11 +156,733 @@
       "cerrador": "(sin asignar)"
     }
   ],
+  "detalle_ventas": [
+    {
+      "ref": "-",
+      "fecha": "04/08",
+      "fuente": "meta_ad",
+      "etapa": "(sin etapa)",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "(sin asignar)"
+    },
+    {
+      "ref": "-",
+      "fecha": "03/08",
+      "fuente": "meta_ad",
+      "etapa": "(sin etapa)",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "(sin asignar)"
+    },
+    {
+      "ref": "-",
+      "fecha": "03/08",
+      "fuente": "meta_ad",
+      "etapa": "(sin etapa)",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "(sin asignar)"
+    },
+    {
+      "ref": "5069",
+      "fecha": "05/06",
+      "fuente": "voice",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "Activo",
+      "prob": 8,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5424",
+      "fecha": "12/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "duplicate",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5240",
+      "fecha": "10/06",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5278",
+      "fecha": "11/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5247",
+      "fecha": "10/06",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "4865",
+      "fecha": "29/05",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "duplicate",
+      "prob": 0,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5947",
+      "fecha": "27/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5582",
+      "fecha": "16/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 1,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5803",
+      "fecha": "22/06",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5935",
+      "fecha": "26/06",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "-",
+      "fecha": "27/06",
+      "fuente": "meta_ad",
+      "etapa": "(sin etapa)",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "(sin asignar)"
+    },
+    {
+      "ref": "5948",
+      "fecha": "28/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5964",
+      "fecha": "27/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5829",
+      "fecha": "22/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5966",
+      "fecha": "27/06",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5874",
+      "fecha": "24/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5372",
+      "fecha": "12/06",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "6039",
+      "fecha": "26/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5823",
+      "fecha": "22/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "4898",
+      "fecha": "30/05",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "duplicate",
+      "prob": 3,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5295",
+      "fecha": "01/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 1,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5610",
+      "fecha": "17/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 1,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5178",
+      "fecha": "10/06",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "4994",
+      "fecha": "01/06",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "duplicate",
+      "prob": 3,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5963",
+      "fecha": "28/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5831",
+      "fecha": "22/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5833",
+      "fecha": "22/06",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5967",
+      "fecha": "27/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5791",
+      "fecha": "21/06",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "6038",
+      "fecha": "22/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "not_interested",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5970",
+      "fecha": "27/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5933",
+      "fecha": "26/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "6326",
+      "fecha": "10/06",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "duplicate",
+      "prob": 0,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5834",
+      "fecha": "22/06",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5929",
+      "fecha": "26/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5397",
+      "fecha": "13/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "6041",
+      "fecha": "26/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "-",
+      "fecha": "23/06",
+      "fuente": "meta_ad",
+      "etapa": "(sin etapa)",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "(sin asignar)"
+    },
+    {
+      "ref": "5836",
+      "fecha": "22/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5811",
+      "fecha": "22/06",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5806",
+      "fecha": "22/06",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5809",
+      "fecha": "22/06",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5781",
+      "fecha": "21/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5775",
+      "fecha": "21/06",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5602",
+      "fecha": "16/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "6297",
+      "fecha": "12/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "duplicate",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5761",
+      "fecha": "20/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5451",
+      "fecha": "13/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5784",
+      "fecha": "21/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5862",
+      "fecha": "23/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5754",
+      "fecha": "20/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5845",
+      "fecha": "23/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5842",
+      "fecha": "23/06",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5821",
+      "fecha": "22/06",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5817",
+      "fecha": "22/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5772",
+      "fecha": "21/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5750",
+      "fecha": "20/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5768",
+      "fecha": "21/06",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5769",
+      "fecha": "21/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5765",
+      "fecha": "21/06",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5764",
+      "fecha": "21/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5783",
+      "fecha": "21/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5936",
+      "fecha": "26/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "contactar_despues",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5971",
+      "fecha": "29/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5943",
+      "fecha": "27/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5864",
+      "fecha": "23/06",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5982",
+      "fecha": "26/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5983",
+      "fecha": "25/06",
+      "fuente": "organic",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5984",
+      "fecha": "26/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5753",
+      "fecha": "20/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5759",
+      "fecha": "20/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5745",
+      "fecha": "20/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 1,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5735",
+      "fecha": "19/06",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 2,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5810",
+      "fecha": "22/06",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5804",
+      "fecha": "22/06",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "5792",
+      "fecha": "21/06",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "Activo",
+      "prob": 4,
+      "cerrador": "Peregrino TPD"
+    },
+    {
+      "ref": "6042",
+      "fecha": "20/06",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "duplicate",
+      "prob": 0,
+      "cerrador": "Peregrino TPD"
+    }
+  ],
   "meta": {
     "spend": 6954.91,
     "updated": "17/06/2026",
-    "leads": 790,
-    "cpl": 8.8,
+    "leads": 802,
+    "cpl": 8.67,
     "auto": false
   }
 }

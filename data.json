@@ -1,6 +1,6 @@
 {
-  "generado_en": "16/08/2026 10:12 (Cancún)",
-  "today_lbl": "16/08/2026",
+  "generado_en": "17/08/2026 10:16 (Cancún)",
+  "today_lbl": "17/08/2026",
   "mes_act": "08/2026",
   "mes_ant": "07/2026",
   "hoy": {
@@ -12,12 +12,12 @@
     "abandono": 0
   },
   "ayer": {
-    "leads": 4,
-    "activos": 1,
-    "ventas": 1,
-    "llamadas": 2,
-    "chats": 6,
-    "abandono": 3
+    "leads": 0,
+    "activos": 0,
+    "ventas": 0,
+    "llamadas": 0,
+    "chats": 0,
+    "abandono": 0
   },
   "mtd": {
     "leads": 138,
@@ -133,18 +133,18 @@
   "sankey": [
     {
       "fuente": "meta_ad",
-      "total": 63,
-      "ai": 63,
+      "total": 55,
+      "ai": 55,
       "sin_ai": 0,
-      "ai_activo": 17,
-      "ai_aband": 46,
+      "ai_activo": 16,
+      "ai_aband": 39,
       "ai_dup": 0,
       "sinai_activo": 0,
       "sinai_aband": 0,
       "sinai_dup": 0,
-      "call": 13,
+      "call": 12,
       "chat": 4,
-      "call_cer": 12,
+      "call_cer": 11,
       "call_sin": 1,
       "chat_cer": 4,
       "chat_sin": 0
@@ -172,7 +172,7 @@
     "p50": 49,
     "p70": 43
   },
-  "sankey_periodo": "10/08 – 16/08 (últimos 7 días)",
+  "sankey_periodo": "11/08 – 17/08 (últimos 7 días)",
   "detalle_nuevos": [],
   "detalle_ventas": [
     {

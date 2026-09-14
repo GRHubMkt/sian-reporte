@@ -1,6 +1,6 @@
 {
-  "generado_en": "13/09/2026 10:03 (Cancún)",
-  "today_lbl": "13/09/2026",
+  "generado_en": "14/09/2026 10:05 (Cancún)",
+  "today_lbl": "14/09/2026",
   "mes_act": "09/2026",
   "mes_ant": "08/2026",
   "hoy": {
@@ -31,7 +31,7 @@
     "llamadas": 465,
     "chats": 418
   },
-  "pm_mtd_leads": 121,
+  "pm_mtd_leads": 134,
   "funnel": {
     "leads": 1167,
     "activos": 225,
@@ -71,11 +71,6 @@
     }
   ],
   "daily": [
-    {
-      "lbl": "24/08",
-      "leads": 13,
-      "ventas": 8
-    },
     {
       "lbl": "25/08",
       "leads": 11,
@@ -154,24 +149,6 @@
   ],
   "sankey": [
     {
-      "fuente": "meta_ad",
-      "total": 7,
-      "ai": 7,
-      "sin_ai": 0,
-      "ai_activo": 2,
-      "ai_aband": 5,
-      "ai_dup": 0,
-      "sinai_activo": 0,
-      "sinai_aband": 0,
-      "sinai_dup": 0,
-      "call": 2,
-      "chat": 0,
-      "call_cer": 2,
-      "call_sin": 0,
-      "chat_cer": 0,
-      "chat_sin": 0
-    },
-    {
       "fuente": "organic",
       "total": 1,
       "ai": 1,
@@ -194,7 +171,7 @@
     "p50": 48,
     "p70": 42
   },
-  "sankey_periodo": "07/09 – 13/09 (últimos 7 días)",
+  "sankey_periodo": "08/09 – 14/09 (últimos 7 días)",
   "detalle_nuevos": [],
   "detalle_ventas": [
     {

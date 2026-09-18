@@ -1,6 +1,6 @@
 {
-  "generado_en": "17/09/2026 10:04 (Cancún)",
-  "today_lbl": "17/09/2026",
+  "generado_en": "18/09/2026 10:04 (Cancún)",
+  "today_lbl": "18/09/2026",
   "mes_act": "09/2026",
   "mes_ant": "08/2026",
   "hoy": {
@@ -22,7 +22,7 @@
   "mtd": {
     "leads": 90,
     "ventas": 33,
-    "llamadas": 130,
+    "llamadas": 137,
     "chats": 142
   },
   "pm_full": {
@@ -31,10 +31,10 @@
     "llamadas": 467,
     "chats": 418
   },
-  "pm_mtd_leads": 143,
+  "pm_mtd_leads": 149,
   "funnel": {
     "leads": 1168,
-    "activos": 219,
+    "activos": 214,
     "abandono": 714,
     "duplicado": 98,
     "ventas": 369,
@@ -44,7 +44,7 @@
     {
       "fuente": "meta_ad",
       "mtd": 87,
-      "act": 10,
+      "act": 5,
       "ventas": 30,
       "total": 1136
     },
@@ -71,11 +71,6 @@
     }
   ],
   "daily": [
-    {
-      "lbl": "28/08",
-      "leads": 4,
-      "ventas": 0
-    },
     {
       "lbl": "29/08",
       "leads": 9,
@@ -161,9 +156,63 @@
     "p50": 48,
     "p70": 42
   },
-  "sankey_periodo": "11/09 – 17/09 (últimos 7 días)",
+  "sankey_periodo": "12/09 – 18/09 (últimos 7 días)",
   "detalle_nuevos": [],
   "detalle_ventas": [
+    {
+      "ref": "7582",
+      "fecha": "06/09",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "lost",
+      "prob": 0,
+      "cerrador": "Peregrino SEH"
+    },
+    {
+      "ref": "7583",
+      "fecha": "07/09",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "lost",
+      "prob": 0,
+      "cerrador": "Peregrino SEH"
+    },
+    {
+      "ref": "7564",
+      "fecha": "05/09",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "lost",
+      "prob": 0,
+      "cerrador": "Peregrino SEH"
+    },
+    {
+      "ref": "7579",
+      "fecha": "04/09",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "Peregrino SEH"
+    },
+    {
+      "ref": "7568",
+      "fecha": "05/09",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "lost",
+      "prob": 0,
+      "cerrador": "Peregrino SEH"
+    },
+    {
+      "ref": "7601",
+      "fecha": "07/09",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "lost",
+      "prob": 0,
+      "cerrador": "Peregrino SEH"
+    },
     {
       "ref": "7560",
       "fecha": "05/09",
@@ -210,51 +259,6 @@
       "cerrador": "Peregrino SEH"
     },
     {
-      "ref": "7564",
-      "fecha": "05/09",
-      "fuente": "meta_ad",
-      "etapa": "Data Collection y Calificación - SIAN",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "Peregrino SEH"
-    },
-    {
-      "ref": "7601",
-      "fecha": "07/09",
-      "fuente": "meta_ad",
-      "etapa": "Nuevo Lead - SIAN",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "Peregrino SEH"
-    },
-    {
-      "ref": "7583",
-      "fecha": "07/09",
-      "fuente": "meta_ad",
-      "etapa": "Nuevo Lead - SIAN",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "Peregrino SEH"
-    },
-    {
-      "ref": "7582",
-      "fecha": "06/09",
-      "fuente": "meta_ad",
-      "etapa": "Nuevo Lead - SIAN",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "Peregrino SEH"
-    },
-    {
-      "ref": "7579",
-      "fecha": "04/09",
-      "fuente": "meta_ad",
-      "etapa": "Data Collection y Calificación - SIAN",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "Peregrino SEH"
-    },
-    {
       "ref": "7577",
       "fecha": "06/09",
       "fuente": "meta_ad",
@@ -266,15 +270,6 @@
     {
       "ref": "7571",
       "fecha": "06/09",
-      "fuente": "meta_ad",
-      "etapa": "Nuevo Lead - SIAN",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "Peregrino SEH"
-    },
-    {
-      "ref": "7568",
-      "fecha": "05/09",
       "fuente": "meta_ad",
       "etapa": "Nuevo Lead - SIAN",
       "estatus": "Activo",

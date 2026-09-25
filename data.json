@@ -1,6 +1,6 @@
 {
-  "generado_en": "24/09/2026 10:04 (Cancún)",
-  "today_lbl": "24/09/2026",
+  "generado_en": "25/09/2026 10:04 (Cancún)",
+  "today_lbl": "25/09/2026",
   "mes_act": "09/2026",
   "mes_ant": "08/2026",
   "hoy": {
@@ -31,7 +31,7 @@
     "llamadas": 467,
     "chats": 418
   },
-  "pm_mtd_leads": 206,
+  "pm_mtd_leads": 217,
   "funnel": {
     "leads": 1168,
     "activos": 212,
@@ -72,11 +72,6 @@
   ],
   "daily": [
     {
-      "lbl": "04/09",
-      "leads": 12,
-      "ventas": 5
-    },
-    {
       "lbl": "05/09",
       "leads": 11,
       "ventas": 5
@@ -107,7 +102,7 @@
     "p50": 48,
     "p70": 42
   },
-  "sankey_periodo": "18/09 – 24/09 (últimos 7 días)",
+  "sankey_periodo": "19/09 – 25/09 (últimos 7 días)",
   "detalle_nuevos": [],
   "detalle_ventas": [
     {

@@ -1,6 +1,6 @@
 {
-  "generado_en": "26/09/2026 10:04 (Cancún)",
-  "today_lbl": "26/09/2026",
+  "generado_en": "27/09/2026 10:04 (Cancún)",
+  "today_lbl": "27/09/2026",
   "mes_act": "09/2026",
   "mes_ant": "08/2026",
   "hoy": {
@@ -31,7 +31,7 @@
     "llamadas": 467,
     "chats": 418
   },
-  "pm_mtd_leads": 223,
+  "pm_mtd_leads": 230,
   "funnel": {
     "leads": 1168,
     "activos": 212,
@@ -72,11 +72,6 @@
   ],
   "daily": [
     {
-      "lbl": "06/09",
-      "leads": 15,
-      "ventas": 7
-    },
-    {
       "lbl": "07/09",
       "leads": 7,
       "ventas": 2
@@ -97,9 +92,18 @@
     "p50": 48,
     "p70": 42
   },
-  "sankey_periodo": "20/09 – 26/09 (últimos 7 días)",
+  "sankey_periodo": "21/09 – 27/09 (últimos 7 días)",
   "detalle_nuevos": [],
   "detalle_ventas": [
+    {
+      "ref": "6830",
+      "fecha": "20/06",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "duplicate",
+      "prob": 18,
+      "cerrador": "Peregrino SEH"
+    },
     {
       "ref": "7491",
       "fecha": "01/09",
@@ -810,15 +814,6 @@
       "estatus": "no_answer",
       "prob": 1,
       "cerrador": "Peregrino TPD"
-    },
-    {
-      "ref": "7279",
-      "fecha": "21/08",
-      "fuente": "meta_ad",
-      "etapa": "Nuevo Lead - SIAN",
-      "estatus": "lost",
-      "prob": 0,
-      "cerrador": "Peregrino SEH"
     }
   ],
   "meta": {

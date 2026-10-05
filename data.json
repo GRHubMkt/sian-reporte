@@ -1,6 +1,6 @@
 {
-  "generado_en": "04/10/2026 11:05 (Cancún)",
-  "today_lbl": "04/10/2026",
+  "generado_en": "05/10/2026 10:05 (Cancún)",
+  "today_lbl": "05/10/2026",
   "mes_act": "10/2026",
   "mes_ant": "09/2026",
   "hoy": {
@@ -20,10 +20,10 @@
     "abandono": 0
   },
   "mtd": {
-    "leads": 15,
+    "leads": 20,
     "ventas": 7,
     "llamadas": 5,
-    "chats": 18
+    "chats": 23
   },
   "pm_full": {
     "leads": 99,
@@ -31,10 +31,10 @@
     "llamadas": 149,
     "chats": 157
   },
-  "pm_mtd_leads": 55,
+  "pm_mtd_leads": 66,
   "funnel": {
-    "leads": 1192,
-    "activos": 228,
+    "leads": 1197,
+    "activos": 233,
     "abandono": 718,
     "duplicado": 98,
     "ventas": 383,
@@ -43,10 +43,10 @@
   "fuentes": [
     {
       "fuente": "meta_ad",
-      "mtd": 15,
-      "act": 13,
+      "mtd": 20,
+      "act": 18,
       "ventas": 7,
-      "total": 1159
+      "total": 1164
     },
     {
       "fuente": "organic",
@@ -71,11 +71,6 @@
     }
   ],
   "daily": [
-    {
-      "lbl": "14/09",
-      "leads": 1,
-      "ventas": 1
-    },
     {
       "lbl": "28/09",
       "leads": 1,
@@ -105,51 +100,38 @@
       "lbl": "03/10",
       "leads": 5,
       "ventas": 0
+    },
+    {
+      "lbl": "04/10",
+      "leads": 5,
+      "ventas": 0
     }
   ],
   "sankey": [
     {
       "fuente": "meta_ad",
-      "total": 23,
-      "ai": 23,
+      "total": 28,
+      "ai": 28,
       "sin_ai": 0,
-      "ai_activo": 17,
+      "ai_activo": 22,
       "ai_aband": 6,
       "ai_dup": 0,
       "sinai_activo": 0,
       "sinai_aband": 0,
       "sinai_dup": 0,
       "call": 6,
-      "chat": 11,
+      "chat": 16,
       "call_cer": 6,
       "call_sin": 0,
       "chat_cer": 5,
-      "chat_sin": 6
-    },
-    {
-      "fuente": "organic",
-      "total": 1,
-      "ai": 1,
-      "sin_ai": 0,
-      "ai_activo": 0,
-      "ai_aband": 1,
-      "ai_dup": 0,
-      "sinai_activo": 0,
-      "sinai_aband": 0,
-      "sinai_dup": 0,
-      "call": 0,
-      "chat": 0,
-      "call_cer": 0,
-      "call_sin": 0,
-      "chat_cer": 0,
-      "chat_sin": 0
+      "chat_sin": 11
     }
   ],
   "hot": {
     "p50": 48,
     "p70": 42
   },
-  "sankey_periodo": "28/09 – 04/10 (últimos 7 días)",
+  "sankey_periodo": "29/09 – 05/10 (últimos 7 días)",
   "detalle_nuevos": [],
   "detalle_ventas": [
     {
@@ -876,8 +858,8 @@
   "meta": {
     "spend": 6954.91,
     "updated": "17/06/2026",
-    "leads": 1159,
-    "cpl": 6.0,
+    "leads": 1164,
+    "cpl": 5.98,
     "auto": false
   }
 }

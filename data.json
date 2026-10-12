@@ -1,29 +1,29 @@
 {
-  "generado_en": "11/10/2026 10:04 (Cancún)",
-  "today_lbl": "11/10/2026",
+  "generado_en": "12/10/2026 10:08 (Cancún)",
+  "today_lbl": "12/10/2026",
   "mes_act": "10/2026",
   "mes_ant": "09/2026",
   "hoy": {
-    "leads": 0,
-    "activos": 0,
+    "leads": 2,
+    "activos": 2,
     "ventas": 0,
     "llamadas": 0,
-    "chats": 0,
+    "chats": 2,
     "abandono": 0
   },
   "ayer": {
-    "leads": 7,
-    "activos": 7,
+    "leads": 4,
+    "activos": 4,
     "ventas": 0,
     "llamadas": 0,
-    "chats": 7,
+    "chats": 4,
     "abandono": 0
   },
   "mtd": {
-    "leads": 59,
+    "leads": 65,
     "ventas": 19,
-    "llamadas": 22,
-    "chats": 73
+    "llamadas": 23,
+    "chats": 80
   },
   "pm_full": {
     "leads": 99,
@@ -33,9 +33,9 @@
   },
   "pm_mtd_leads": 89,
   "funnel": {
-    "leads": 1236,
+    "leads": 1242,
     "activos": 257,
-    "abandono": 728,
+    "abandono": 734,
     "duplicado": 99,
     "ventas": 395,
     "ganados": 6
@@ -43,10 +43,10 @@
   "fuentes": [
     {
       "fuente": "meta_ad",
-      "mtd": 59,
+      "mtd": 65,
       "act": 43,
       "ventas": 19,
-      "total": 1203
+      "total": 1209
     },
     {
       "fuente": "organic",
@@ -135,25 +135,35 @@
       "lbl": "10/10",
       "leads": 7,
       "ventas": 0
+    },
+    {
+      "lbl": "11/10",
+      "leads": 4,
+      "ventas": 0
+    },
+    {
+      "lbl": "12/10",
+      "leads": 2,
+      "ventas": 0
     }
   ],
   "sankey": [
     {
       "fuente": "meta_ad",
-      "total": 39,
-      "ai": 39,
+      "total": 40,
+      "ai": 40,
       "sin_ai": 0,
-      "ai_activo": 35,
-      "ai_aband": 4,
+      "ai_activo": 32,
+      "ai_aband": 8,
       "ai_dup": 0,
       "sinai_activo": 0,
       "sinai_aband": 0,
       "sinai_dup": 0,
-      "call": 6,
-      "chat": 29,
-      "call_cer": 4,
+      "call": 4,
+      "chat": 28,
+      "call_cer": 2,
       "call_sin": 2,
-      "chat_cer": 5,
+      "chat_cer": 4,
       "chat_sin": 24
     }
   ],
@@ -161,8 +171,27 @@
     "p50": 48,
     "p70": 42
   },
-  "sankey_periodo": "05/10 – 11/10 (últimos 7 días)",
-  "detalle_nuevos": [],
+  "sankey_periodo": "06/10 – 12/10 (últimos 7 días)",
+  "detalle_nuevos": [
+    {
+      "ref": "-",
+      "fecha": "12/10",
+      "fuente": "meta_ad",
+      "etapa": "(sin etapa)",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "(sin asignar)"
+    },
+    {
+      "ref": "-",
+      "fecha": "12/10",
+      "fuente": "meta_ad",
+      "etapa": "(sin etapa)",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "(sin asignar)"
+    }
+  ],
   "detalle_ventas": [
     {
       "ref": "8071",
@@ -888,8 +917,8 @@
   "meta": {
     "spend": 6954.91,
     "updated": "17/06/2026",
-    "leads": 1203,
-    "cpl": 5.78,
+    "leads": 1209,
+    "cpl": 5.75,
     "auto": false
   }
 }

@@ -1,29 +1,29 @@
 {
-  "generado_en": "25/10/2026 10:03 (Cancún)",
-  "today_lbl": "25/10/2026",
+  "generado_en": "26/10/2026 10:27 (Cancún)",
+  "today_lbl": "26/10/2026",
   "mes_act": "10/2026",
   "mes_ant": "09/2026",
   "hoy": {
-    "leads": 5,
-    "activos": 5,
+    "leads": 0,
+    "activos": 0,
     "ventas": 0,
     "llamadas": 0,
-    "chats": 5,
+    "chats": 0,
     "abandono": 0
   },
   "ayer": {
-    "leads": 7,
-    "activos": 7,
-    "ventas": 2,
-    "llamadas": 0,
-    "chats": 7,
+    "leads": 14,
+    "activos": 14,
+    "ventas": 3,
+    "llamadas": 2,
+    "chats": 16,
     "abandono": 0
   },
   "mtd": {
-    "leads": 169,
-    "ventas": 62,
-    "llamadas": 189,
-    "chats": 264
+    "leads": 178,
+    "ventas": 65,
+    "llamadas": 194,
+    "chats": 277
   },
   "pm_full": {
     "leads": 99,
@@ -33,20 +33,20 @@
   },
   "pm_mtd_leads": 90,
   "funnel": {
-    "leads": 1346,
-    "activos": 254,
-    "abandono": 795,
+    "leads": 1355,
+    "activos": 260,
+    "abandono": 794,
     "duplicado": 100,
-    "ventas": 441,
+    "ventas": 444,
     "ganados": 6
   },
   "fuentes": [
     {
       "fuente": "meta_ad",
-      "mtd": 167,
-      "act": 41,
-      "ventas": 61,
-      "total": 1311
+      "mtd": 176,
+      "act": 47,
+      "ventas": 64,
+      "total": 1320
     },
     {
       "fuente": "organic",
@@ -71,11 +71,6 @@
     }
   ],
   "daily": [
-    {
-      "lbl": "05/10",
-      "leads": 5,
-      "ventas": 3
-    },
     {
       "lbl": "06/10",
       "leads": 6,
@@ -173,83 +168,73 @@
     },
     {
       "lbl": "25/10",
-      "leads": 5,
-      "ventas": 0
+      "leads": 14,
+      "ventas": 3
     }
   ],
   "sankey": [
     {
       "fuente": "meta_ad",
-      "total": 54,
-      "ai": 54,
+      "total": 57,
+      "ai": 57,
       "sin_ai": 0,
-      "ai_activo": 28,
-      "ai_aband": 26,
+      "ai_activo": 34,
+      "ai_aband": 23,
       "ai_dup": 0,
       "sinai_activo": 0,
       "sinai_aband": 0,
       "sinai_dup": 0,
-      "call": 8,
-      "chat": 20,
-      "call_cer": 6,
-      "call_sin": 2,
-      "chat_cer": 5,
-      "chat_sin": 15
+      "call": 9,
+      "chat": 25,
+      "call_cer": 5,
+      "call_sin": 4,
+      "chat_cer": 7,
+      "chat_sin": 18
     }
   ],
   "hot": {
     "p50": 48,
     "p70": 42
   },
-  "sankey_periodo": "19/10 – 25/10 (últimos 7 días)",
-  "detalle_nuevos": [
-    {
-      "ref": "8230",
-      "fecha": "25/10",
-      "fuente": "meta_ad",
-      "etapa": "Nuevo Lead - SIAN",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "Peregrino SEH"
-    },
-    {
-      "ref": "8228",
-      "fecha": "25/10",
-      "fuente": "meta_ad",
-      "etapa": "Nuevo Lead - SIAN",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "Peregrino SEH"
-    },
-    {
-      "ref": "-",
-      "fecha": "25/10",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "25/10",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    },
-    {
-      "ref": "-",
-      "fecha": "25/10",
-      "fuente": "meta_ad",
-      "etapa": "(sin etapa)",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "(sin asignar)"
-    }
-  ],
+  "sankey_periodo": "20/10 – 26/10 (últimos 7 días)",
+  "detalle_nuevos": [],
   "detalle_ventas": [
+    {
+      "ref": "8236",
+      "fecha": "25/10",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "Peregrino SEH"
+    },
+    {
+      "ref": "8235",
+      "fecha": "25/10",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "Peregrino SEH"
+    },
+    {
+      "ref": "8233",
+      "fecha": "25/10",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "Peregrino SEH"
+    },
+    {
+      "ref": "8143",
+      "fecha": "17/10",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "contactar_despues",
+      "prob": 0,
+      "cerrador": "Peregrino SEH"
+    },
     {
       "ref": "8226",
       "fecha": "24/10",
@@ -381,7 +366,7 @@
       "fecha": "20/10",
       "fuente": "meta_ad",
       "etapa": "Nuevo Lead - SIAN",
-      "estatus": "Activo",
+      "estatus": "lost",
       "prob": 0,
       "cerrador": "Peregrino SEH"
     },
@@ -390,7 +375,7 @@
       "fecha": "18/10",
       "fuente": "meta_ad",
       "etapa": "Nuevo Lead - SIAN",
-      "estatus": "Activo",
+      "estatus": "lost",
       "prob": 0,
       "cerrador": "Peregrino SEH"
     },
@@ -454,15 +439,6 @@
       "fuente": "meta_ad",
       "etapa": "Nuevo Lead - SIAN",
       "estatus": "lost",
-      "prob": 0,
-      "cerrador": "Peregrino SEH"
-    },
-    {
-      "ref": "8143",
-      "fecha": "17/10",
-      "fuente": "meta_ad",
-      "etapa": "Nuevo Lead - SIAN",
-      "estatus": "contactar_despues",
       "prob": 0,
       "cerrador": "Peregrino SEH"
     },
@@ -942,40 +918,13 @@
       "estatus": "lost",
       "prob": 0,
       "cerrador": "Peregrino SEH"
-    },
-    {
-      "ref": "7724",
-      "fecha": "14/09",
-      "fuente": "organic",
-      "etapa": "Data Collection y Calificación - SIAN",
-      "estatus": "lost",
-      "prob": 0,
-      "cerrador": "Peregrino SEH"
-    },
-    {
-      "ref": "7582",
-      "fecha": "06/09",
-      "fuente": "meta_ad",
-      "etapa": "Nuevo Lead - SIAN",
-      "estatus": "lost",
-      "prob": 0,
-      "cerrador": "Peregrino SEH"
-    },
-    {
-      "ref": "7583",
-      "fecha": "07/09",
-      "fuente": "meta_ad",
-      "etapa": "Nuevo Lead - SIAN",
-      "estatus": "lost",
-      "prob": 0,
-      "cerrador": "Peregrino SEH"
     }
   ],
   "meta": {
     "spend": 6954.91,
     "updated": "17/06/2026",
-    "leads": 1311,
-    "cpl": 5.31,
+    "leads": 1320,
+    "cpl": 5.27,
     "auto": false
   }
 }

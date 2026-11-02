@@ -1,29 +1,29 @@
 {
-  "generado_en": "01/11/2026 10:02 (Cancún)",
-  "today_lbl": "01/11/2026",
+  "generado_en": "02/11/2026 10:03 (Cancún)",
+  "today_lbl": "02/11/2026",
   "mes_act": "11/2026",
   "mes_ant": "10/2026",
   "hoy": {
-    "leads": 0,
-    "activos": 0,
+    "leads": 1,
+    "activos": 1,
     "ventas": 0,
     "llamadas": 0,
-    "chats": 0,
+    "chats": 1,
     "abandono": 0
   },
   "ayer": {
-    "leads": 8,
-    "activos": 7,
-    "ventas": 1,
+    "leads": 9,
+    "activos": 9,
+    "ventas": 0,
     "llamadas": 0,
-    "chats": 8,
+    "chats": 9,
     "abandono": 0
   },
   "mtd": {
-    "leads": 0,
+    "leads": 10,
     "ventas": 0,
     "llamadas": 0,
-    "chats": 0
+    "chats": 10
   },
   "pm_full": {
     "leads": 250,
@@ -31,10 +31,10 @@
     "llamadas": 297,
     "chats": 411
   },
-  "pm_mtd_leads": 8,
+  "pm_mtd_leads": 10,
   "funnel": {
-    "leads": 1427,
-    "activos": 258,
+    "leads": 1437,
+    "activos": 268,
     "abandono": 839,
     "duplicado": 101,
     "ventas": 456,
@@ -43,10 +43,10 @@
   "fuentes": [
     {
       "fuente": "meta_ad",
-      "mtd": 0,
-      "act": 0,
+      "mtd": 10,
+      "act": 10,
       "ventas": 0,
-      "total": 1388
+      "total": 1398
     },
     {
       "fuente": "organic",
@@ -71,11 +71,6 @@
     }
   ],
   "daily": [
-    {
-      "lbl": "12/10",
-      "leads": 11,
-      "ventas": 3
-    },
     {
       "lbl": "13/10",
       "leads": 7,
@@ -170,26 +165,36 @@
       "lbl": "31/10",
       "leads": 8,
       "ventas": 1
+    },
+    {
+      "lbl": "01/11",
+      "leads": 9,
+      "ventas": 0
+    },
+    {
+      "lbl": "02/11",
+      "leads": 1,
+      "ventas": 0
     }
   ],
   "sankey": [
     {
       "fuente": "meta_ad",
-      "total": 68,
-      "ai": 68,
+      "total": 64,
+      "ai": 64,
       "sin_ai": 0,
-      "ai_activo": 23,
-      "ai_aband": 43,
+      "ai_activo": 32,
+      "ai_aband": 30,
       "ai_dup": 2,
       "sinai_activo": 0,
       "sinai_aband": 0,
       "sinai_dup": 0,
-      "call": 9,
-      "chat": 14,
-      "call_cer": 2,
+      "call": 8,
+      "chat": 24,
+      "call_cer": 1,
       "call_sin": 7,
       "chat_cer": 5,
-      "chat_sin": 9
+      "chat_sin": 19
     },
     {
       "fuente": "organic",
@@ -214,9 +219,28 @@
     "p50": 48,
     "p70": 42
   },
-  "sankey_periodo": "26/10 – 01/11 (últimos 7 días)",
-  "detalle_nuevos": [],
+  "sankey_periodo": "27/10 – 02/11 (últimos 7 días)",
+  "detalle_nuevos": [
+    {
+      "ref": "-",
+      "fecha": "02/11",
+      "fuente": "meta_ad",
+      "etapa": "(sin etapa)",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "(sin asignar)"
+    }
+  ],
   "detalle_ventas": [
+    {
+      "ref": "8002",
+      "fecha": "29/09",
+      "fuente": "meta_ad",
+      "etapa": "Data Collection y Calificación - SIAN",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "Peregrino SEH"
+    },
     {
       "ref": "8312",
       "fecha": "31/10",
@@ -911,15 +935,6 @@
       "cerrador": "Peregrino SEH"
     },
     {
-      "ref": "8002",
-      "fecha": "29/09",
-      "fuente": "meta_ad",
-      "etapa": "Data Collection y Calificación - SIAN",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "Peregrino SEH"
-    },
-    {
       "ref": "8054",
       "fecha": "29/09",
       "fuente": "meta_ad",
@@ -941,8 +956,8 @@
   "meta": {
     "spend": 6954.91,
     "updated": "17/06/2026",
-    "leads": 1388,
-    "cpl": 5.01,
+    "leads": 1398,
+    "cpl": 4.97,
     "auto": false
   }
 }

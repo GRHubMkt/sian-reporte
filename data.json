@@ -1,59 +1,59 @@
 {
-  "generado_en": "17/11/2026 10:03 (Cancún)",
-  "today_lbl": "17/11/2026",
+  "generado_en": "18/11/2026 10:03 (Cancún)",
+  "today_lbl": "18/11/2026",
   "mes_act": "11/2026",
   "mes_ant": "10/2026",
   "hoy": {
-    "leads": 3,
-    "activos": 3,
-    "ventas": 0,
+    "leads": 7,
+    "activos": 7,
+    "ventas": 1,
     "llamadas": 0,
-    "chats": 3,
+    "chats": 7,
     "abandono": 0
   },
   "ayer": {
-    "leads": 27,
-    "activos": 25,
-    "ventas": 3,
-    "llamadas": 1,
-    "chats": 28,
-    "abandono": 0
+    "leads": 23,
+    "activos": 21,
+    "ventas": 5,
+    "llamadas": 6,
+    "chats": 29,
+    "abandono": 1
   },
   "mtd": {
-    "leads": 289,
-    "ventas": 35,
-    "llamadas": 370,
-    "chats": 467
+    "leads": 316,
+    "ventas": 44,
+    "llamadas": 443,
+    "chats": 549
   },
   "pm_full": {
     "leads": 250,
     "ventas": 77,
-    "llamadas": 345,
-    "chats": 439
+    "llamadas": 347,
+    "chats": 441
   },
-  "pm_mtd_leads": 101,
+  "pm_mtd_leads": 115,
   "funnel": {
-    "leads": 1716,
-    "activos": 407,
-    "abandono": 910,
+    "leads": 1743,
+    "activos": 425,
+    "abandono": 915,
     "duplicado": 100,
-    "ventas": 492,
+    "ventas": 501,
     "ganados": 6
   },
   "fuentes": [
     {
       "fuente": "meta_ad",
-      "mtd": 289,
-      "act": 173,
-      "ventas": 35,
-      "total": 1677
+      "mtd": 314,
+      "act": 189,
+      "ventas": 43,
+      "total": 1702
     },
     {
       "fuente": "organic",
-      "mtd": 0,
-      "act": 0,
-      "ventas": 0,
-      "total": 37
+      "mtd": 2,
+      "act": 2,
+      "ventas": 1,
+      "total": 39
     },
     {
       "fuente": "voice",
@@ -71,11 +71,6 @@
     }
   ],
   "daily": [
-    {
-      "lbl": "28/10",
-      "leads": 17,
-      "ventas": 3
-    },
     {
       "lbl": "29/10",
       "leads": 11,
@@ -164,66 +159,125 @@
     {
       "lbl": "15/11",
       "leads": 25,
-      "ventas": 3
+      "ventas": 4
     },
     {
       "lbl": "16/11",
       "leads": 27,
-      "ventas": 3
+      "ventas": 5
     },
     {
       "lbl": "17/11",
-      "leads": 3,
-      "ventas": 0
+      "leads": 23,
+      "ventas": 5
+    },
+    {
+      "lbl": "18/11",
+      "leads": 7,
+      "ventas": 1
     }
   ],
   "sankey": [
     {
       "fuente": "meta_ad",
-      "total": 148,
-      "ai": 148,
+      "total": 158,
+      "ai": 158,
       "sin_ai": 0,
-      "ai_activo": 117,
-      "ai_aband": 31,
+      "ai_activo": 124,
+      "ai_aband": 34,
       "ai_dup": 0,
       "sinai_activo": 0,
       "sinai_aband": 0,
       "sinai_dup": 0,
-      "call": 38,
-      "chat": 79,
-      "call_cer": 6,
-      "call_sin": 32,
-      "chat_cer": 9,
-      "chat_sin": 70
+      "call": 76,
+      "chat": 48,
+      "call_cer": 7,
+      "call_sin": 69,
+      "chat_cer": 12,
+      "chat_sin": 36
+    },
+    {
+      "fuente": "organic",
+      "total": 2,
+      "ai": 2,
+      "sin_ai": 0,
+      "ai_activo": 2,
+      "ai_aband": 0,
+      "ai_dup": 0,
+      "sinai_activo": 0,
+      "sinai_aband": 0,
+      "sinai_dup": 0,
+      "call": 0,
+      "chat": 2,
+      "call_cer": 0,
+      "call_sin": 0,
+      "chat_cer": 1,
+      "chat_sin": 1
     }
   ],
   "hot": {
-    "p50": 473,
-    "p70": 471
+    "p50": 162,
+    "p70": 161
   },
-  "sankey_periodo": "11/11 – 17/11 (últimos 7 días)",
+  "sankey_periodo": "12/11 – 18/11 (últimos 7 días)",
   "detalle_nuevos": [
     {
-      "ref": "8545",
-      "fecha": "17/11",
+      "ref": "8598",
+      "fecha": "18/11",
       "fuente": "meta_ad",
       "etapa": "Nuevo Lead - SIAN",
       "estatus": "Activo",
-      "prob": 1,
+      "prob": 0,
       "cerrador": "Peregrino SEH"
     },
     {
-      "ref": "8544",
-      "fecha": "17/11",
+      "ref": "8599",
+      "fecha": "18/11",
       "fuente": "meta_ad",
       "etapa": "Nuevo Lead - SIAN",
       "estatus": "Activo",
-      "prob": 1,
+      "prob": 0,
+      "cerrador": "Peregrino SEH"
+    },
+    {
+      "ref": "8597",
+      "fecha": "18/11",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "Peregrino SEH"
+    },
+    {
+      "ref": "8594",
+      "fecha": "18/11",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "Activo",
+      "prob": 0,
       "cerrador": "Peregrino SEH"
     },
     {
       "ref": "-",
-      "fecha": "17/11",
+      "fecha": "18/11",
+      "fuente": "meta_ad",
+      "etapa": "(sin etapa)",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "(sin asignar)"
+    },
+    {
+      "ref": "-",
+      "fecha": "18/11",
+      "fuente": "organic",
+      "etapa": "(sin etapa)",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "(sin asignar)"
+    },
+    {
+      "ref": "-",
+      "fecha": "18/11",
       "fuente": "meta_ad",
       "etapa": "(sin etapa)",
       "estatus": "Activo",
@@ -233,21 +287,66 @@
   ],
   "detalle_ventas": [
     {
-      "ref": "8538",
-      "fecha": "16/11",
+      "ref": "8586",
+      "fecha": "17/11",
       "fuente": "meta_ad",
       "etapa": "Nuevo Lead - SIAN",
       "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "Peregrino SEH"
+    },
+    {
+      "ref": "8594",
+      "fecha": "18/11",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "Peregrino SEH"
+    },
+    {
+      "ref": "8593",
+      "fecha": "17/11",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "Peregrino SEH"
+    },
+    {
+      "ref": "8592",
+      "fecha": "17/11",
+      "fuente": "organic",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "Peregrino SEH"
+    },
+    {
+      "ref": "8587",
+      "fecha": "17/11",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "Peregrino SEH"
+    },
+    {
+      "ref": "8531",
+      "fecha": "16/11",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "buscando_opciones",
       "prob": 1,
       "cerrador": "Peregrino SEH"
     },
     {
-      "ref": "8543",
-      "fecha": "16/11",
+      "ref": "8547",
+      "fecha": "17/11",
       "fuente": "meta_ad",
       "etapa": "Nuevo Lead - SIAN",
       "estatus": "Activo",
-      "prob": 1,
+      "prob": 0,
       "cerrador": "Peregrino SEH"
     },
     {
@@ -255,21 +354,12 @@
       "fecha": "16/11",
       "fuente": "meta_ad",
       "etapa": "Nuevo Lead - SIAN",
-      "estatus": "Activo",
+      "estatus": "costo_elevado",
       "prob": 1,
       "cerrador": "Peregrino SEH"
     },
     {
       "ref": "8517",
-      "fecha": "14/11",
-      "fuente": "meta_ad",
-      "etapa": "Nuevo Lead - SIAN",
-      "estatus": "Activo",
-      "prob": 1,
-      "cerrador": "Peregrino SEH"
-    },
-    {
-      "ref": "8532",
       "fecha": "14/11",
       "fuente": "meta_ad",
       "etapa": "Nuevo Lead - SIAN",
@@ -287,8 +377,53 @@
       "cerrador": "Peregrino SEH"
     },
     {
+      "ref": "8582",
+      "fecha": "16/11",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "Activo",
+      "prob": 0,
+      "cerrador": "Peregrino SEH"
+    },
+    {
       "ref": "8471",
       "fecha": "11/11",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "not_interested",
+      "prob": 1,
+      "cerrador": "Peregrino SEH"
+    },
+    {
+      "ref": "8308",
+      "fecha": "30/10",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "lost",
+      "prob": 0,
+      "cerrador": "Peregrino SEH"
+    },
+    {
+      "ref": "8538",
+      "fecha": "16/11",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "Activo",
+      "prob": 1,
+      "cerrador": "Peregrino SEH"
+    },
+    {
+      "ref": "8543",
+      "fecha": "16/11",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "costo_elevado",
+      "prob": 1,
+      "cerrador": "Peregrino SEH"
+    },
+    {
+      "ref": "8532",
+      "fecha": "14/11",
       "fuente": "meta_ad",
       "etapa": "Nuevo Lead - SIAN",
       "estatus": "Activo",
@@ -323,12 +458,21 @@
       "cerrador": "Peregrino SEH"
     },
     {
+      "ref": "8522",
+      "fecha": "15/11",
+      "fuente": "meta_ad",
+      "etapa": "Nuevo Lead - SIAN",
+      "estatus": "Activo",
+      "prob": 1,
+      "cerrador": "Peregrino SEH"
+    },
+    {
       "ref": "8504",
       "fecha": "14/11",
       "fuente": "meta_ad",
-      "etapa": "Lost",
+      "etapa": "Nuevo Lead - SIAN",
       "estatus": "contactar_despues",
-      "prob": 14,
+      "prob": 0,
       "cerrador": "Peregrino SEH"
     },
     {
@@ -470,9 +614,9 @@
       "ref": "8321",
       "fecha": "02/11",
       "fuente": "meta_ad",
-      "etapa": "Lost",
+      "etapa": "Nuevo Lead - SIAN",
       "estatus": "costo_elevado",
-      "prob": 81,
+      "prob": 0,
       "cerrador": "Peregrino SEH"
     },
     {
@@ -506,9 +650,9 @@
       "ref": "8312",
       "fecha": "31/10",
       "fuente": "meta_ad",
-      "etapa": "Lost",
+      "etapa": "Nuevo Lead - SIAN",
       "estatus": "lost",
-      "prob": 81,
+      "prob": 0,
       "cerrador": "Peregrino SEH"
     },
     {
@@ -539,30 +683,21 @@
       "cerrador": "Peregrino SEH"
     },
     {
-      "ref": "8308",
-      "fecha": "30/10",
-      "fuente": "meta_ad",
-      "etapa": "Lost",
-      "estatus": "lost",
-      "prob": 81,
-      "cerrador": "Peregrino SEH"
-    },
-    {
       "ref": "8340",
       "fecha": "04/11",
       "fuente": "meta_ad",
-      "etapa": "Lost",
+      "etapa": "Nuevo Lead - SIAN",
       "estatus": "Activo",
-      "prob": 22,
+      "prob": 0,
       "cerrador": "Peregrino SEH"
     },
     {
       "ref": "8002",
       "fecha": "29/09",
       "fuente": "meta_ad",
-      "etapa": "Lost",
+      "etapa": "Nuevo Lead - SIAN",
       "estatus": "Activo",
-      "prob": 81,
+      "prob": 0,
       "cerrador": "Peregrino SEH"
     },
     {
@@ -596,9 +731,9 @@
       "ref": "8193",
       "fecha": "09/08",
       "fuente": "meta_ad",
-      "etapa": "Lost",
+      "etapa": "Nuevo Lead - SIAN",
       "estatus": "lost",
-      "prob": 81,
+      "prob": 0,
       "cerrador": "Peregrino SEH"
     },
     {
@@ -668,9 +803,9 @@
       "ref": "8235",
       "fecha": "25/10",
       "fuente": "meta_ad",
-      "etapa": "Lost",
+      "etapa": "Nuevo Lead - SIAN",
       "estatus": "no_answer",
-      "prob": 81,
+      "prob": 0,
       "cerrador": "Peregrino SEH"
     },
     {
@@ -686,9 +821,9 @@
       "ref": "5648",
       "fecha": "18/06",
       "fuente": "meta_ad",
-      "etapa": "Lost",
+      "etapa": "Nuevo Lead - SIAN",
       "estatus": "no_answer",
-      "prob": 14,
+      "prob": 0,
       "cerrador": "Peregrino SEH"
     },
     {
@@ -713,9 +848,9 @@
       "ref": "8277",
       "fecha": "28/10",
       "fuente": "meta_ad",
-      "etapa": "Lost",
+      "etapa": "Nuevo Lead - SIAN",
       "estatus": "Activo",
-      "prob": 81,
+      "prob": 0,
       "cerrador": "Peregrino SEH"
     },
     {
@@ -785,9 +920,9 @@
       "ref": "8251",
       "fecha": "08/10",
       "fuente": "meta_ad",
-      "etapa": "Lost",
+      "etapa": "Nuevo Lead - SIAN",
       "estatus": "lost",
-      "prob": 81,
+      "prob": 0,
       "cerrador": "Peregrino SEH"
     },
     {
@@ -803,18 +938,18 @@
       "ref": "8017",
       "fecha": "30/09",
       "fuente": "meta_ad",
-      "etapa": "Lost",
+      "etapa": "Nuevo Lead - SIAN",
       "estatus": "lost",
-      "prob": 81,
+      "prob": 0,
       "cerrador": "Peregrino SEH"
     },
     {
       "ref": "8226",
       "fecha": "24/10",
       "fuente": "meta_ad",
-      "etapa": "Lost",
+      "etapa": "Nuevo Lead - SIAN",
       "estatus": "lost",
-      "prob": 81,
+      "prob": 0,
       "cerrador": "Peregrino SEH"
     },
     {
@@ -830,18 +965,18 @@
       "ref": "8143",
       "fecha": "17/10",
       "fuente": "meta_ad",
-      "etapa": "Lost",
+      "etapa": "Nuevo Lead - SIAN",
       "estatus": "not_interested",
-      "prob": 81,
+      "prob": 0,
       "cerrador": "Peregrino SEH"
     },
     {
       "ref": "8188",
       "fecha": "22/10",
       "fuente": "meta_ad",
-      "etapa": "Lost",
+      "etapa": "Nuevo Lead - SIAN",
       "estatus": "lost",
-      "prob": 81,
+      "prob": 0,
       "cerrador": "Peregrino SEH"
     },
     {
@@ -857,107 +992,26 @@
       "ref": "8203",
       "fecha": "22/10",
       "fuente": "meta_ad",
-      "etapa": "Lost",
+      "etapa": "Nuevo Lead - SIAN",
       "estatus": "lost",
-      "prob": 81,
+      "prob": 0,
       "cerrador": "Peregrino SEH"
     },
     {
       "ref": "8212",
       "fecha": "17/10",
       "fuente": "meta_ad",
-      "etapa": "Lost",
-      "estatus": "lost",
-      "prob": 81,
-      "cerrador": "Peregrino SEH"
-    },
-    {
-      "ref": "8248",
-      "fecha": "18/10",
-      "fuente": "meta_ad",
-      "etapa": "Lost",
-      "estatus": "lost",
-      "prob": 81,
-      "cerrador": "Peregrino SEH"
-    },
-    {
-      "ref": "8189",
-      "fecha": "22/10",
-      "fuente": "meta_ad",
-      "etapa": "Lost",
-      "estatus": "lost",
-      "prob": 81,
-      "cerrador": "Peregrino SEH"
-    },
-    {
-      "ref": "8185",
-      "fecha": "21/10",
-      "fuente": "meta_ad",
-      "etapa": "Lost",
-      "estatus": "lost",
-      "prob": 81,
-      "cerrador": "Peregrino SEH"
-    },
-    {
-      "ref": "8186",
-      "fecha": "22/10",
-      "fuente": "meta_ad",
-      "etapa": "Lost",
-      "estatus": "lost",
-      "prob": 81,
-      "cerrador": "Peregrino SEH"
-    },
-    {
-      "ref": "8134",
-      "fecha": "18/10",
-      "fuente": "meta_ad",
-      "etapa": "Lost",
-      "estatus": "lost",
-      "prob": 81,
-      "cerrador": "Peregrino SEH"
-    },
-    {
-      "ref": "8152",
-      "fecha": "20/10",
-      "fuente": "meta_ad",
-      "etapa": "Lost",
-      "estatus": "lost",
-      "prob": 81,
-      "cerrador": "Peregrino SEH"
-    },
-    {
-      "ref": "8146",
-      "fecha": "18/10",
-      "fuente": "meta_ad",
-      "etapa": "Lost",
-      "estatus": "lost",
-      "prob": 81,
-      "cerrador": "Peregrino SEH"
-    },
-    {
-      "ref": "8183",
-      "fecha": "21/10",
-      "fuente": "meta_ad",
       "etapa": "Nuevo Lead - SIAN",
-      "estatus": "Activo",
-      "prob": 0,
-      "cerrador": "Peregrino SEH"
-    },
-    {
-      "ref": "8022",
-      "fecha": "01/10",
-      "fuente": "meta_ad",
-      "etapa": "Lost",
       "estatus": "lost",
-      "prob": 81,
+      "prob": 0,
       "cerrador": "Peregrino SEH"
     }
   ],
   "meta": {
     "spend": 6954.91,
     "updated": "17/06/2026",
-    "leads": 1677,
-    "cpl": 4.15,
+    "leads": 1702,
+    "cpl": 4.09,
     "auto": false
   }
 }
